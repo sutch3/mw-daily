@@ -1,0 +1,502 @@
+[
+  {
+    "id": "mw-001",
+    "category": "Viticulture",
+    "difficulty": "MW-style",
+    "prompt": "Evaluate the effectiveness of canopy management as a response to warmer growing seasons in premium cool-climate Pinot Noir production.",
+    "model_answer": "A strong answer should treat canopy management as one tool within a wider adaptation strategy. It can reduce sunburn through shading, slow sugar accumulation where leaf area is retained, improve airflow where disease pressure remains high, and protect aromatic delicacy. However, excessive shading can reduce phenolic maturity, increase methoxypyrazine risk in some varieties, and delay ripening into less favourable autumn conditions. The best judgement is site-specific: row orientation, clone, rootstock, soil water status, disease pressure, labour availability and target wine style all alter the optimal balance.",
+    "marking_points": ["Links canopy density to sugar, acid and phenolic development", "Considers sunburn, heat spikes and disease pressure", "Mentions row orientation, leaf removal timing and shoot positioning", "Balances fruit exposure with aromatic and textural goals", "Reaches a qualified judgement rather than a blanket recommendation"],
+    "common_traps": ["Assuming more leaf removal is always better", "Ignoring labour cost and timing", "Discussing climate change without linking back to Pinot Noir style"],
+    "follow_up_topics": ["Pinot Noir clonal selection", "Heatwave management", "Cool-climate canopy trials"]
+  },
+  {
+    "id": "mw-002",
+    "category": "Vinification",
+    "difficulty": "Exam pressure",
+    "prompt": "Critically examine the use of whole-bunch fermentation in Syrah, comparing its technical risks with its potential stylistic benefits.",
+    "model_answer": "Whole-bunch Syrah can add perfume, spice, structure and freshness, partly through intracellular fermentation, stem-derived phenolics and altered cap management. It can also reduce perceived fruit weight and contribute a lifted, savoury register prized in some cool-climate and Northern Rhone-inspired styles. Risks include green tannins, elevated pH, microbial pockets in intact bunches, inconsistent extraction and excessive carbonic character. The decision depends on stem lignification, fruit ripeness, bunch health, vessel type, temperature control and intended market positioning.",
+    "marking_points": ["Explains stem lignification and tannin quality", "Connects technique to aroma, texture and freshness", "Addresses microbial and extraction management", "Compares warm and cool climate suitability", "Identifies market and style implications"],
+    "common_traps": ["Equating whole bunch only with carbonic maceration", "Ignoring stem maturity", "Listing flavours without explaining mechanism"],
+    "follow_up_topics": ["Stem tannin chemistry", "Northern Rhone vinification", "Cap management options"]
+  },
+  {
+    "id": "mw-003",
+    "category": "Wine business",
+    "difficulty": "MW-style",
+    "prompt": "Assess whether direct-to-consumer sales are a sustainable growth strategy for small premium wineries.",
+    "model_answer": "DTC can increase margin, customer data ownership and brand loyalty, especially through cellar door, allocation lists and wine clubs. It can also reduce distributor dependence. Sustainability depends on traffic, digital capability, fulfilment, compliance, customer acquisition cost and retention. Small wineries may underestimate the operational burden of service, logistics and content creation. A balanced answer should argue that DTC is powerful when integrated with hospitality and brand storytelling, but risky if treated as a cheap substitute for professional route-to-market planning.",
+    "marking_points": ["Discusses margin and cash-flow advantages", "Considers fulfilment, compliance and customer service", "Addresses acquisition versus retention economics", "Compares DTC with distributor/importer routes", "Links strategy to premium positioning"],
+    "common_traps": ["Assuming DTC has no cost", "Ignoring legal restrictions by market", "Forgetting the winery's scale and visitor access"],
+    "follow_up_topics": ["Wine club economics", "Three-tier system", "Cellar door conversion rates"]
+  },
+  {
+    "id": "mw-004",
+    "category": "Global wine regions",
+    "difficulty": "Warm-up",
+    "prompt": "Compare the main factors shaping quality and style in Chablis and the Cote de Beaune for Chardonnay.",
+    "model_answer": "Chablis is shaped by a cooler, more marginal climate, frost risk, Kimmeridgian-influenced soils in key sites and a tradition of restrained oak use, often producing higher acid, citrus and mineral profiles. The Cote de Beaune is generally warmer, with greater ripeness, more frequent oak fermentation or maturation, and a broader range from village to grand cru richness. Quality in both depends on site, yield, vine age, producer decisions and vintage. The best comparison recognises that regional identity is created by both environment and winemaking convention.",
+    "marking_points": ["Compares climate and ripening", "Mentions frost and vintage variability", "Discusses oak and lees handling", "Explains site hierarchy and producer effect", "Avoids simplistic soil determinism"],
+    "common_traps": ["Saying Chablis never uses oak", "Overstating soil as the sole cause of style", "Ignoring vintage variation"],
+    "follow_up_topics": ["Burgundy appellation hierarchy", "Frost protection", "Chardonnay lees ageing"]
+  },
+  {
+    "id": "mw-005",
+    "category": "Current issues",
+    "difficulty": "MW-style",
+    "prompt": "Discuss the implications of lighter glass bottles for premium wine producers, considering sustainability, brand perception and supply chain realities.",
+    "model_answer": "Lighter glass can reduce transport emissions, material use and cost, making it one of the clearest sustainability interventions available to bottled wine. Premium producers may fear that lighter bottles weaken quality cues, particularly in markets where weight has become a proxy for luxury. Supply chain constraints include bottle availability, line compatibility, breakage testing and retailer pressure. A persuasive answer should argue that category norms can change when producers, importers and retailers align messaging around quality, provenance and environmental responsibility.",
+    "marking_points": ["Quantifies or explains packaging's role in carbon footprint", "Addresses consumer psychology and premium cues", "Considers bottling line and logistics constraints", "Mentions retailer or monopoly pressure", "Offers a realistic transition strategy"],
+    "common_traps": ["Treating sustainability as only vineyard practice", "Ignoring perceived luxury", "Assuming all bottle formats are immediately interchangeable"],
+    "follow_up_topics": ["Wine packaging emissions", "Luxury signalling", "Alternative packaging formats"]
+  },
+  {
+    "id": "mw-006",
+    "category": "Tasting logic",
+    "difficulty": "MW-style",
+    "prompt": "Assess how acid profile, tannin quality and aroma development can be used together to distinguish Nebbiolo from Sangiovese in blind tasting.",
+    "model_answer": "Both varieties can show high acidity and savoury red-fruited profiles, so the answer should avoid single-marker thinking. Nebbiolo often combines pale colour, high acid, firm drying tannins, floral or tar-like aromatics and slow-developing tertiary notes. Sangiovese more often shows sour cherry, herbal or earthy notes, medium to high tannins, and a broader range of colour depending on region and extraction. Oak, age, site and winemaking can blur signals, so the taster should build a probability argument across structure, aroma and regional style.",
+    "marking_points": ["Compares colour, acid and tannin together", "Mentions floral, tar, cherry, herbal and earthy clues", "Considers age and oak effects", "Recognises overlap and uncertainty", "Links tasting evidence to likely region/style"],
+    "common_traps": ["Using one aroma as proof", "Ignoring colour intensity", "Failing to account for bottle age"],
+    "follow_up_topics": ["Italian red blind tasting grids", "Nebbiolo tannin development", "Sangiovese regional styles"]
+  },
+  {
+    "id": "mw-007",
+    "category": "Research paper skills",
+    "difficulty": "Warm-up",
+    "prompt": "Evaluate what makes a strong Master of Wine research paper topic, using examples from sustainability, consumer behaviour or production practice.",
+    "model_answer": "A strong topic is focused, researchable, original enough to add value, and narrow enough to answer with available time and data. It should have a clear research question, defined population or market, accessible evidence and practical relevance to the wine trade. Broad themes such as sustainability or consumer behaviour need narrowing into measurable questions. The best topics balance academic rigour with industry usefulness and avoid becoming opinion essays or descriptive surveys.",
+    "marking_points": ["Defines scope and researchability", "Mentions data access and methodology", "Addresses originality and trade relevance", "Distinguishes research question from theme", "Gives plausible narrowed examples"],
+    "common_traps": ["Choosing a topic that is too broad", "Confusing advocacy with research", "Ignoring data availability"],
+    "follow_up_topics": ["Research question design", "Survey methodology", "Literature review strategy"]
+  },
+  {
+    "id": "mw-008",
+    "category": "Viticulture",
+    "difficulty": "Exam pressure",
+    "prompt": "Critically examine deficit irrigation as a quality tool in regions facing increasing water scarcity.",
+    "model_answer": "Deficit irrigation can control vigour, reduce berry size, improve skin-to-pulp ratio and support concentration when applied carefully after fruit set or around veraison. In water-scarce regions it may also be a necessity, not merely a quality choice. Risks include blocked ripening, excessive tannin, yield loss, salinity build-up and long-term vine stress. The answer should weigh soil type, root depth, variety, rootstock, water rights, monitoring technology and social licence. Quality claims must be balanced against sustainability and resilience.",
+    "marking_points": ["Explains timing and vine physiological response", "Links water stress to berry composition", "Considers salinity and long-term vine health", "Discusses regulation and water rights", "Evaluates sustainability beyond wine quality"],
+    "common_traps": ["Treating stress as always beneficial", "Ignoring soil and rootstock", "Forgetting community competition for water"],
+    "follow_up_topics": ["Regulated deficit irrigation", "Pressure chamber use", "Drought-tolerant rootstocks"]
+  },
+  {
+    "id": "mw-009",
+    "category": "Vinification",
+    "difficulty": "MW-style",
+    "prompt": "Discuss the advantages and limitations of spontaneous fermentation for premium white wines.",
+    "model_answer": "Spontaneous fermentation may contribute complexity, texture and a stronger sense of place through diverse yeast populations and slower fermentation kinetics. It can be valuable for premium producers seeking differentiation. Limitations include sluggish or stuck fermentations, volatile acidity, sulphide production, inconsistent outcomes and higher monitoring demands. Fruit condition, cellar hygiene, temperature control, nutrient status and tolerance for variability are decisive. A nuanced answer should avoid romanticising wild ferments and compare them with selected yeast strategies.",
+    "marking_points": ["Explains microbial diversity and sensory effects", "Addresses stuck fermentation and spoilage risks", "Considers nutrient and temperature management", "Compares with selected yeast reliability", "Links decision to premium brand positioning"],
+    "common_traps": ["Assuming spontaneous equals better terroir expression", "Ignoring hygiene", "Forgetting white wine oxidation risk"],
+    "follow_up_topics": ["Non-Saccharomyces yeasts", "YAN management", "Fermentation temperature effects"]
+  },
+  {
+    "id": "mw-010",
+    "category": "Wine business",
+    "difficulty": "Warm-up",
+    "prompt": "Assess the role of importers in building demand for emerging wine regions.",
+    "model_answer": "Importers can curate quality, explain unfamiliar regions, manage logistics, support education and reduce risk for restaurants and retailers. For emerging regions, they often act as translators between producer identity and market expectations. Their influence is limited by margin pressure, small allocations, inconsistent supply and the need to justify shelf or list space against established regions. Strong answers should show how importer credibility, storytelling and channel selection can accelerate adoption but cannot compensate for weak quality or unclear positioning.",
+    "marking_points": ["Explains importer as curator and educator", "Addresses logistics and compliance", "Links channel choice to region building", "Considers supply consistency and pricing", "Notes limits of storytelling"],
+    "common_traps": ["Describing importers only as middlemen", "Ignoring restaurant and retail influence", "Assuming novelty automatically sells"],
+    "follow_up_topics": ["Route to market", "On-trade influence", "Regional branding"]
+  },
+  {
+    "id": "mw-011",
+    "category": "Global wine regions",
+    "difficulty": "Exam pressure",
+    "prompt": "Critically compare the challenges and opportunities for premium Riesling in Germany, Austria and Australia.",
+    "model_answer": "Germany offers historic reputation, diverse sweetness levels and strong vineyard identities, but can face consumer confusion around labelling and sweetness. Austria has built a dry, gastronomic image with precise regional structures, though production volumes are limited. Australia, especially Clare and Eden Valley, offers dry, lime-driven styles with strong ageing potential but must overcome narrower global associations with other varieties. A high-quality answer compares climate, style, labelling, export identity, price ladder and food culture rather than merely listing regions.",
+    "marking_points": ["Compares dry and sweet market positioning", "Mentions labelling and regional identity", "Explains climate and style differences", "Considers export scale and consumer perception", "Addresses ageing and premium pricing"],
+    "common_traps": ["Treating Riesling as one style", "Ignoring sweetness communication", "Overlooking Australian premium examples"],
+    "follow_up_topics": ["VDP classification", "Wachau categories", "Clare Valley Riesling"]
+  },
+  {
+    "id": "mw-012",
+    "category": "Current issues",
+    "difficulty": "Warm-up",
+    "prompt": "Evaluate whether alcohol reduction is a quality opportunity or a commercial compromise for table wine producers.",
+    "model_answer": "Alcohol reduction can meet consumer demand for moderation, improve balance in warm vintages and open new occasions. It can also damage texture, aroma integration and legal category expectations if handled crudely. Vineyard decisions, earlier picking, yeast selection, membrane technologies and blending all offer routes with different quality consequences. The strongest answer distinguishes naturally balanced lower-alcohol wines from dealcoholised or partially dealcoholised products and considers market segment, labelling and taste acceptance.",
+    "marking_points": ["Distinguishes viticultural and technical routes", "Discusses sensory impact of alcohol", "Considers moderation trends and taxation", "Addresses legal labelling categories", "Makes a segment-specific judgement"],
+    "common_traps": ["Assuming low alcohol means low quality", "Ignoring body and aroma effects", "Not defining the level of reduction"],
+    "follow_up_topics": ["Spinning cone technology", "Low-alcohol wine regulation", "Consumer moderation trends"]
+  },
+  {
+    "id": "mw-013",
+    "category": "Tasting logic",
+    "difficulty": "Exam pressure",
+    "prompt": "Discuss how you would distinguish traditional-method sparkling wines from Champagne, Franciacorta and England in a blind tasting flight.",
+    "model_answer": "The taster should combine acidity, autolysis, fruit ripeness, phenolic texture, dosage impression and likely ageing. Champagne often shows high acidity, chalky tension and complex autolysis, though style varies widely. Franciacorta may show riper orchard fruit, softer acidity and a broader palate, often from a warmer climate and different market tradition. English sparkling wine can show very high acidity, green apple or citrus fruit and increasingly serious lees complexity. Conclusions must remain probabilistic because producer style, dosage and age can easily mislead.",
+    "marking_points": ["Uses structure as well as flavour", "Compares climate influence on ripeness and acidity", "Mentions lees ageing, dosage and bottle age", "Recognises producer variation", "Frames conclusion with uncertainty"],
+    "common_traps": ["Assuming autolysis proves Champagne", "Ignoring dosage", "Overgeneralising English sparkling wine as simple"],
+    "follow_up_topics": ["Traditional method production", "Base wine acidity", "Sparkling wine blind tasting"]
+  },
+  {
+    "id": "mw-014",
+    "category": "Research paper skills",
+    "difficulty": "MW-style",
+    "prompt": "Assess the strengths and weaknesses of using interviews as primary research for an MW research paper.",
+    "model_answer": "Interviews can generate rich, contextual evidence from producers, buyers, consumers or technical experts, especially when exploring behaviour or emerging issues. They are flexible and can reveal themes not anticipated by the researcher. Weaknesses include small sample size, bias, poor comparability, leading questions and difficulty generalising. Strong methodology requires a clear sampling rationale, consistent interview guide, ethical handling of responses and transparent coding. Interviews are strongest when triangulated with literature, sales data, surveys or technical evidence.",
+    "marking_points": ["Explains qualitative value", "Discusses sampling and bias", "Mentions interview guide and coding", "Considers ethics and anonymity", "Recommends triangulation"],
+    "common_traps": ["Treating anecdotes as proof", "Ignoring respondent selection", "Failing to link method to research question"],
+    "follow_up_topics": ["Qualitative coding", "Semi-structured interviews", "Research ethics"]
+  },
+  {
+    "id": "mw-015",
+    "category": "Viticulture",
+    "difficulty": "MW-style",
+    "prompt": "Compare organic, biodynamic and regenerative viticulture as quality and marketing propositions.",
+    "model_answer": "Organic viticulture is clearly regulated in many markets and restricts synthetic inputs, offering consumer recognition and environmental claims. Biodynamic viticulture adds a holistic philosophy, preparations and certification, often carrying strong premium storytelling but also scepticism. Regenerative viticulture focuses on soil health, biodiversity, carbon and ecosystem resilience, but definitions and certification are still evolving. Quality effects are indirect and depend on site management rather than labels alone. The best answer separates agronomic practice, evidence, certification, cost, risk and consumer meaning.",
+    "marking_points": ["Defines each approach accurately", "Compares certification and consumer recognition", "Addresses disease-pressure challenges", "Avoids claiming automatic quality improvement", "Links soil and biodiversity to resilience"],
+    "common_traps": ["Conflating the three systems", "Making unsupported quality claims", "Ignoring regional disease pressure"],
+    "follow_up_topics": ["Organic certification", "Biodynamic preparations", "Regenerative agriculture metrics"]
+  },
+  {
+    "id": "mw-016",
+    "category": "Vinification",
+    "difficulty": "Warm-up",
+    "prompt": "Evaluate the role of lees ageing in shaping the quality and style of premium Chardonnay.",
+    "model_answer": "Lees ageing can add texture, savoury complexity, mouthfeel and protection against oxidation through yeast autolysis and reductive buffering. Batonnage can increase richness and perceived body, though it may obscure site expression or create heaviness if overused. The impact depends on lees quality, time, vessel, sulphur regime, oxygen exposure and base wine acidity. A good answer compares restrained, mineral styles with richer barrel-fermented examples and shows that lees are a precision tool, not a quality guarantee.",
+    "marking_points": ["Explains autolysis and texture", "Discusses batonnage", "Links lees to oxidation and reduction", "Considers vessel and time", "Relates technique to style goal"],
+    "common_traps": ["Equating lees ageing only with bread flavours", "Ignoring reduction risk", "Forgetting base wine balance"],
+    "follow_up_topics": ["Yeast autolysis", "Barrel fermentation", "Premature oxidation"]
+  },
+  {
+    "id": "mw-017",
+    "category": "Wine business",
+    "difficulty": "Exam pressure",
+    "prompt": "Critically examine how premium wine brands can justify price increases during periods of economic pressure.",
+    "model_answer": "Price increases can be justified by scarcity, rising production costs, improved quality, stronger critical reputation, brand equity and inflation. However, consumers and trade buyers may resist if value perception is weak or substitutes are available. Premium brands need disciplined allocation, transparent communication, channel consistency and evidence of distinctiveness. Overreliance on price as a prestige signal can damage loyalty. The strongest answers compare fine wine, luxury gifting, restaurant listings and everyday premium segments, where elasticity differs.",
+    "marking_points": ["Addresses cost, scarcity and brand equity", "Considers price elasticity by segment", "Discusses channel and allocation strategy", "Mentions communication and perceived value", "Identifies risk of alienating loyal buyers"],
+    "common_traps": ["Assuming premium consumers are price-insensitive", "Ignoring distributor and retailer margins", "Treating inflation as sufficient explanation"],
+    "follow_up_topics": ["Luxury pricing", "Wine price elasticity", "Allocation models"]
+  },
+  {
+    "id": "mw-018",
+    "category": "Global wine regions",
+    "difficulty": "MW-style",
+    "prompt": "Assess the prospects for premium Chenin Blanc in South Africa compared with the Loire Valley.",
+    "model_answer": "The Loire offers benchmark appellations, acidity, ageability and a spectrum from dry to sweet, but can suffer from fragmented consumer understanding. South Africa has old vines, diverse climates, energetic producers and strong value-to-quality narratives, especially in dry textured styles. Challenges include price ceilings, export perception and communicating regional diversity. The best answer compares terroir, vine age, stylistic range, market identity, critical attention and the ability to convert specialist enthusiasm into broader premium demand.",
+    "marking_points": ["Compares old-vine assets and appellation identity", "Explains stylistic diversity", "Addresses market perception and price ceilings", "Mentions acidity, texture and ageability", "Offers a view on premium potential"],
+    "common_traps": ["Reducing Loire to sweet wines", "Ignoring South African regional diversity", "Assuming critic praise equals mainstream demand"],
+    "follow_up_topics": ["Swartland producers", "Vouvray and Savennieres", "Old Vine Project"]
+  },
+  {
+    "id": "mw-019",
+    "category": "Current issues",
+    "difficulty": "Exam pressure",
+    "prompt": "Critically examine whether certification schemes help or hinder consumer understanding of sustainable wine.",
+    "model_answer": "Certification can provide trust, third-party verification and a framework for producers to improve practice. It can also create logo fatigue, inconsistent standards and confusion between organic, biodynamic, sustainable and regenerative claims. For consumers, simple and credible signals help; too many overlapping schemes can weaken communication. The answer should consider producer cost, market recognition, retailer requirements, greenwashing risk and whether certification measures meaningful outcomes or just practices.",
+    "marking_points": ["Compares trust benefits with complexity", "Distinguishes different sustainability claims", "Addresses cost and access for producers", "Considers retailer and export market pressure", "Mentions greenwashing and outcome metrics"],
+    "common_traps": ["Assuming certification is automatically meaningful", "Ignoring consumer recognition", "Forgetting small-producer burden"],
+    "follow_up_topics": ["Sustainability certification schemes", "Greenwashing regulation", "Lifecycle assessment"]
+  },
+  {
+    "id": "mw-020",
+    "category": "Tasting logic",
+    "difficulty": "Warm-up",
+    "prompt": "Evaluate the tasting evidence that might lead you to identify a wine as high-altitude Malbec rather than warm lowland Malbec.",
+    "model_answer": "High-altitude Malbec may show deeper colour, vivid acidity, floral lift, fresher black or blue fruit, firmer tannins and less jammy alcohol warmth due to diurnal range and UV effects. Warm lowland examples may show softer acidity, riper fruit, fuller alcohol and sometimes baked or plush characters. Oak regime, yield, extraction and picking date complicate the distinction. A strong answer uses structure, fruit condition and balance rather than relying only on intensity.",
+    "marking_points": ["Links altitude to diurnal range and UV exposure", "Compares acidity, alcohol and fruit profile", "Mentions tannin and colour", "Accounts for winemaking variables", "Avoids assuming altitude equals quality"],
+    "common_traps": ["Using colour alone", "Ignoring oak and extraction", "Equating ripe with lowland automatically"],
+    "follow_up_topics": ["Mendoza subregions", "Altitude effects", "Malbec phenolics"]
+  },
+  {
+    "id": "mw-021",
+    "category": "Research paper skills",
+    "difficulty": "Exam pressure",
+    "prompt": "Discuss how to design a survey that produces useful evidence for an MW research paper on consumer attitudes to alternative wine packaging.",
+    "model_answer": "The survey needs a precise research question, defined target population and sampling plan. Questions should avoid leading wording, separate awareness from purchase intent, and include relevant demographics, occasions, price points and packaging formats. Visual stimuli may help but must be controlled. Results should be analysed with clear limitations around sample bias and stated behaviour versus actual purchase. The best answer explains how survey evidence would be triangulated with sales data, retailer interviews or existing literature.",
+    "marking_points": ["Defines population and sampling method", "Avoids leading or double-barrelled questions", "Includes price, occasion and format variables", "Acknowledges bias and stated-intent limitations", "Recommends triangulation"],
+    "common_traps": ["Surveying only friends and treating it as representative", "Asking vague attitude questions", "Ignoring actual purchase behaviour"],
+    "follow_up_topics": ["Questionnaire design", "Sampling bias", "Packaging adoption research"]
+  },
+  {
+    "id": "mw-022",
+    "category": "Viticulture",
+    "difficulty": "Warm-up",
+    "prompt": "Assess the importance of rootstock choice for quality wine production in drought-prone vineyards.",
+    "model_answer": "Rootstock affects drought tolerance, vigour, nutrient uptake, salinity tolerance, pest resistance and vine balance. In drought-prone vineyards, deep rooting and efficient water use can protect yield and ripening continuity. However, rootstock cannot overcome poor site choice, shallow soils or inadequate water availability. The choice must match variety, soil chemistry, nematode or phylloxera pressure, desired vigour and long-term climate projections. Quality comes from balanced vine growth rather than drought tolerance alone.",
+    "marking_points": ["Explains water uptake and vigour effects", "Mentions soil, salinity and pest resistance", "Links rootstock to vine balance and ripening", "Considers long-term planting decisions", "Avoids presenting one universal best rootstock"],
+    "common_traps": ["Naming rootstocks without explaining trade-offs", "Ignoring scion compatibility", "Treating drought tolerance as the only criterion"],
+    "follow_up_topics": ["Drought-tolerant rootstocks", "Root architecture", "Salinity management"]
+  },
+  {
+    "id": "mw-023",
+    "category": "Vinification",
+    "difficulty": "Exam pressure",
+    "prompt": "Critically examine the use of oak alternatives in wines positioned above entry level.",
+    "model_answer": "Oak alternatives can provide cost-effective flavour, tannin and oxygen-management options, especially where new barrels are uneconomic. For above-entry wines, careful use of staves, chips or adjuncts can support consistency and value, but risks include obvious flavour, poor integration and negative perception if transparency or quality cues matter. The answer should compare sensory outcome, cost, sustainability, regulation, market expectations and the difference between technical legitimacy and premium storytelling.",
+    "marking_points": ["Compares alternatives with barrels technically and commercially", "Addresses flavour integration and texture", "Mentions oxygen exposure differences", "Considers legal and market perception issues", "Makes a segment-specific judgement"],
+    "common_traps": ["Dismissing alternatives as always inferior", "Ignoring cost and sustainability", "Forgetting oxygen transfer differences"],
+    "follow_up_topics": ["Oak adjunct regulation", "Micro-oxygenation", "Barrel economics"]
+  },
+  {
+    "id": "mw-024",
+    "category": "Wine business",
+    "difficulty": "MW-style",
+    "prompt": "Evaluate the strategic value of wine tourism for regional brand building.",
+    "model_answer": "Wine tourism can turn abstract regional names into memorable experiences, supporting DTC sales, hospitality revenue, loyalty and word-of-mouth. It helps smaller regions communicate landscape, food culture and producer personality. Limitations include seasonality, infrastructure, staff costs, rural access, regulatory barriers and vulnerability to travel shocks. The strongest answer treats tourism as part of a regional ecosystem involving producers, restaurants, accommodation, local government and export messaging.",
+    "marking_points": ["Links tourism to regional identity and loyalty", "Addresses DTC and hospitality revenue", "Considers infrastructure and seasonality", "Mentions collaboration across stakeholders", "Recognises limits for export markets"],
+    "common_traps": ["Assuming tourism only benefits individual wineries", "Ignoring staff and infrastructure", "Forgetting non-visitor consumers"],
+    "follow_up_topics": ["Regional wine routes", "Cellar door strategy", "Place branding"]
+  },
+  {
+    "id": "mw-025",
+    "category": "Global wine regions",
+    "difficulty": "Warm-up",
+    "prompt": "Compare the stylistic identity of Rioja and Ribera del Duero for premium Tempranillo.",
+    "model_answer": "Rioja often balances Tempranillo with regional blending traditions, American or French oak influence, acidity and a spectrum from traditional savoury styles to modern fruit-driven wines. Ribera del Duero is generally more continental, with greater diurnal range, deeper colour, firmer tannins and powerful black-fruited profiles. Both regions now show wide producer diversity. Strong answers should discuss climate, altitude, soils, oak ageing classifications, blending, market reputation and the evolution of style.",
+    "marking_points": ["Compares climate and structure", "Mentions oak and ageing classifications", "Addresses blending traditions", "Recognises modern stylistic diversity", "Links style to market positioning"],
+    "common_traps": ["Treating Rioja as only traditional", "Ignoring altitude in Ribera", "Overstating legal categories as quality guarantees"],
+    "follow_up_topics": ["Rioja classification changes", "Ribera del Duero climate", "Tempranillo oak ageing"]
+  },
+  {
+    "id": "mw-026",
+    "category": "Current issues",
+    "difficulty": "MW-style",
+    "prompt": "Assess the likely impact of artificial intelligence on the wine trade over the next decade.",
+    "model_answer": "AI may affect vineyard monitoring, yield forecasting, disease detection, pricing, inventory, recommendation engines, customer service and content generation. It could help small producers access analytics previously available only to larger firms. Risks include generic communication, data ownership concerns, biased recommendations and the erosion of human expertise as a trust signal. The best answer separates operational efficiency from brand differentiation and asks where wine's emotional, sensory and cultural value resists automation.",
+    "marking_points": ["Identifies practical applications across the chain", "Discusses data quality and ownership", "Considers producer scale effects", "Addresses consumer recommendation and retail", "Balances efficiency with human trust"],
+    "common_traps": ["Making vague claims about disruption", "Ignoring data limitations", "Forgetting wine's experiential nature"],
+    "follow_up_topics": ["Precision viticulture tools", "AI retail recommendations", "Data governance"]
+  },
+  {
+    "id": "mw-027",
+    "category": "Tasting logic",
+    "difficulty": "MW-style",
+    "prompt": "Discuss how bottle age can complicate blind identification of variety and origin in premium white wines.",
+    "model_answer": "Bottle age can transform primary fruit into honeyed, nutty, waxy, petrol, mushroom or oxidative notes, reducing the clarity of youthful varietal markers. Acidity, phenolic texture, alcohol and residual sugar may become more important than fruit descriptors. Age can also reveal quality through integration and length, but storage variation and premature oxidation can mislead. A strong answer compares age trajectories for Riesling, Chardonnay, Chenin Blanc and Semillon and explains how to build a conclusion from structure and development.",
+    "marking_points": ["Explains loss or transformation of primary aroma", "Uses structure to support identification", "Compares several varieties", "Mentions storage and premature oxidation", "Links maturity to quality assessment"],
+    "common_traps": ["Calling all developed whites oxidised", "Relying on petrol as proof of Riesling", "Ignoring residual sugar"],
+    "follow_up_topics": ["White wine ageing markers", "Premature oxidation", "Hunter Semillon"]
+  },
+  {
+    "id": "mw-028",
+    "category": "Research paper skills",
+    "difficulty": "MW-style",
+    "prompt": "Evaluate how a literature review should shape, rather than merely decorate, an MW research paper.",
+    "model_answer": "A literature review should identify what is already known, expose gaps, clarify definitions and justify the research question and method. It should not be a decorative summary of loosely related sources. Strong reviews compare evidence quality, highlight disagreement and create a framework for analysing primary data. They also prevent duplication and help interpret findings. The best answer shows how the literature review drives scope, hypotheses, methodology and discussion.",
+    "marking_points": ["Explains gap identification", "Links literature to research design", "Assesses source quality", "Defines key terms and frameworks", "Shows how it informs discussion"],
+    "common_traps": ["Writing an annotated bibliography", "Using sources only to support a pre-decided view", "Ignoring contradictory evidence"],
+    "follow_up_topics": ["Academic source evaluation", "Conceptual frameworks", "Citation management"]
+  },
+  {
+    "id": "mw-029",
+    "category": "Viticulture",
+    "difficulty": "Exam pressure",
+    "prompt": "Critically examine the role of vineyard altitude in determining wine quality and style.",
+    "model_answer": "Altitude can increase diurnal range, preserve acidity, alter UV exposure, extend ripening and reduce disease pressure in some regions. It can also bring frost, hail, wind, access costs, slower ripening and vintage risk. Its effect depends on latitude, aspect, slope, soil, cloud cover and variety. The strongest answer resists altitude romanticism: altitude is valuable where it solves a ripening or balance problem, but not an independent guarantee of quality.",
+    "marking_points": ["Explains temperature and diurnal effects", "Mentions UV and phenolics", "Considers frost, wind and access risks", "Links altitude to latitude and aspect", "Makes a qualified quality judgement"],
+    "common_traps": ["Assuming higher is always better", "Ignoring latitude", "Forgetting economic costs"],
+    "follow_up_topics": ["High-altitude viticulture", "Diurnal range", "Mountain vineyard economics"]
+  },
+  {
+    "id": "mw-030",
+    "category": "Vinification",
+    "difficulty": "MW-style",
+    "prompt": "Assess the importance of oxygen management during the production of premium rose wines.",
+    "model_answer": "Premium rose often depends on delicate colour, fresh aromatics and precise texture, making oxygen management central from pressing to bottling. Protective handling can preserve thiols and esters, while controlled oxygen may reduce later browning or instability depending on variety and style. Risks include colour loss, oxidation of phenolics, loss of freshness and reductive faults if protection is excessive. Decisions must consider grape variety, pressing regime, clarification, fermentation temperature, sulphur, closure and intended shelf life.",
+    "marking_points": ["Links oxygen to colour and aroma stability", "Discusses protective versus controlled exposure", "Mentions pressing and clarification", "Considers sulphur and closure", "Relates management to shelf life and style"],
+    "common_traps": ["Treating rose as simple white winemaking", "Ignoring colour stability", "Assuming zero oxygen is always best"],
+    "follow_up_topics": ["Rose phenolics", "Thiols in pink wines", "Closure oxygen transmission"]
+  },
+  {
+    "id": "mw-031",
+    "category": "Wine business",
+    "difficulty": "Exam pressure",
+    "prompt": "Discuss whether scores from critics remain commercially important in an increasingly fragmented media environment.",
+    "model_answer": "Critic scores still influence fine wine, allocations, export credibility and retailer communication, especially where buyers need shorthand signals. Their power is diluted by social media, peer recommendation, sommeliers, influencers and direct producer storytelling. Scores can homogenise style incentives or oversimplify complex wines, but they remain useful in crowded markets. A strong answer distinguishes market segments, geographies and price points, and recognises that authority has fragmented rather than disappeared.",
+    "marking_points": ["Differentiates fine wine and everyday segments", "Discusses trade and consumer uses of scores", "Mentions influencers and social media", "Addresses style incentives", "Makes a nuanced claim about fragmented authority"],
+    "common_traps": ["Declaring critics irrelevant", "Ignoring distributor and retailer use", "Treating all critics as equal"],
+    "follow_up_topics": ["Wine criticism", "Influencer marketing", "Fine wine release strategy"]
+  },
+  {
+    "id": "mw-032",
+    "category": "Global wine regions",
+    "difficulty": "Exam pressure",
+    "prompt": "Critically compare the premium positioning of Barolo and Brunello di Montalcino in global markets.",
+    "model_answer": "Barolo benefits from Nebbiolo's distinctive structure, commune and MGA specificity, long ageing potential and strong collector interest, but can be austere and fragmented for consumers. Brunello offers a powerful Tuscan identity, Sangiovese familiarity, estate branding and a generally more accessible premium message, though style and quality vary. Both depend on vintage, producer reputation and allocation. A strong answer compares appellation identity, grape recognition, critical perception, pricing, release timing and gastronomic appeal.",
+    "marking_points": ["Compares grape, structure and ageability", "Addresses appellation and subzone communication", "Discusses pricing and collector demand", "Mentions producer reputation and vintage", "Considers consumer accessibility"],
+    "common_traps": ["Saying one is simply better", "Ignoring legal ageing requirements", "Overlooking intra-regional variation"],
+    "follow_up_topics": ["Barolo MGA", "Brunello regulations", "Italian fine wine markets"]
+  },
+  {
+    "id": "mw-033",
+    "category": "Current issues",
+    "difficulty": "Warm-up",
+    "prompt": "Evaluate the opportunities and risks of canned wine for quality-focused producers.",
+    "model_answer": "Cans offer portability, lower serving size, reduced weight and access to informal occasions. They can support younger consumers and outdoor or event channels. Risks include oxygen pickup, shelf-life limits, liner compatibility, premium perception and mismatch with wines requiring bottle ageing. Quality-focused producers need wines designed for early drinking, rigorous packaging trials and clear occasion-based positioning. Cans are best treated as a different format, not a cheaper bottle substitute.",
+    "marking_points": ["Discusses occasion and format benefits", "Addresses oxygen and liner issues", "Considers premium perception", "Mentions shelf life and wine style fit", "Links to target consumer and channel"],
+    "common_traps": ["Assuming cans are only low quality", "Ignoring technical packaging risk", "Putting age-worthy wines in the wrong format"],
+    "follow_up_topics": ["Can liner chemistry", "Alternative packaging", "Single-serve wine"]
+  },
+  {
+    "id": "mw-034",
+    "category": "Tasting logic",
+    "difficulty": "Exam pressure",
+    "prompt": "Assess the evidence that differentiates cool-climate Cabernet Franc from cool-climate Cabernet Sauvignon in blind tasting.",
+    "model_answer": "Both can show leafy aromatics, high acidity and firm tannin, especially in marginal climates. Cabernet Franc often has lighter body, more red fruit, floral notes, fine but sometimes chalky tannins and pronounced herbal or graphite tones. Cabernet Sauvignon tends toward deeper colour, blackcurrant, cedar, firmer structure and more substantial tannic frame. Ripeness, oak, blending and region complicate the distinction, so a robust answer builds from colour, fruit spectrum, tannin weight and aromatic detail.",
+    "marking_points": ["Compares colour, body and tannin weight", "Contrasts red and black fruit tendencies", "Discusses pyrazines and herbal notes", "Considers oak and blending", "Avoids relying on one marker"],
+    "common_traps": ["Assuming green notes prove Cabernet Franc", "Ignoring colour and tannin", "Forgetting regional ripeness variation"],
+    "follow_up_topics": ["Methoxypyrazines", "Loire Cabernet Franc", "Cool-climate Cabernet Sauvignon"]
+  },
+  {
+    "id": "mw-035",
+    "category": "Research paper skills",
+    "difficulty": "Warm-up",
+    "prompt": "Discuss how to turn a broad research interest in climate change into a viable MW research paper question.",
+    "model_answer": "The topic must be narrowed by geography, stakeholder group, variety, production stage or market effect. A viable question might examine how a defined group of producers is adapting irrigation, packaging, variety choice or communication. The question should be answerable with available data, have a clear method and avoid predicting the whole future of wine. A strong answer shows the movement from theme to focused research question, then to evidence and analysis.",
+    "marking_points": ["Narrows by place, population or practice", "Defines an answerable research question", "Considers data access", "Avoids over-broad future claims", "Links question to methodology"],
+    "common_traps": ["Keeping the topic global and vague", "Trying to solve climate change", "Choosing a question with no accessible evidence"],
+    "follow_up_topics": ["Research scope", "Climate adaptation", "Method matching"]
+  },
+  {
+    "id": "mw-036",
+    "category": "Viticulture",
+    "difficulty": "MW-style",
+    "prompt": "Evaluate the role of cover crops in balancing vineyard sustainability, vine vigour and grape quality.",
+    "model_answer": "Cover crops can improve soil structure, biodiversity, organic matter, water infiltration and trafficability while reducing erosion. They can also compete for water and nutrients, which may be beneficial in vigorous sites but harmful in dry or low-vigour vineyards. Species selection, mowing, under-vine management and seasonal rainfall are critical. The best answer links cover-crop strategy to vine balance, yield, disease pressure, carbon claims and long-term resilience rather than treating it as a universal good.",
+    "marking_points": ["Explains soil and biodiversity benefits", "Discusses water and nutrient competition", "Mentions species and management timing", "Links vigour to fruit quality", "Considers climate and site variability"],
+    "common_traps": ["Assuming cover crops suit every site", "Ignoring water scarcity", "Failing to connect practice to wine quality"],
+    "follow_up_topics": ["Cover crop species", "Soil organic matter", "Erosion control"]
+  },
+  {
+    "id": "mw-037",
+    "category": "Vinification",
+    "difficulty": "Exam pressure",
+    "prompt": "Critically examine the technical choices involved in making a premium, age-worthy rose.",
+    "model_answer": "Age-worthy rose requires suitable varieties, balanced phenolics, controlled oxygen exposure, stable colour, sufficient acidity, texture and careful closure choice. Short maceration or direct pressing can work depending on grape and style, while oak or lees may add structure if integrated. Risks include phenolic bitterness, premature colour loss, oxidation and market expectations that rose is for immediate drinking. A strong answer compares Provence-inspired delicacy with more structured gastronomic rose styles.",
+    "marking_points": ["Discusses variety and phenolic management", "Addresses colour and oxygen stability", "Considers acidity, lees and oak", "Mentions closure and shelf life", "Links technical choice to premium positioning"],
+    "common_traps": ["Assuming pale colour equals quality", "Ignoring ageing chemistry", "Treating rose as inherently short-lived"],
+    "follow_up_topics": ["Bandol rose", "Rose colour stability", "Phenolic extraction"]
+  },
+  {
+    "id": "mw-038",
+    "category": "Wine business",
+    "difficulty": "Warm-up",
+    "prompt": "Assess the advantages and disadvantages of selling wine through restaurants compared with specialist retail.",
+    "model_answer": "Restaurants provide context, sommelier advocacy, food pairing and trial opportunities, which can build reputation for premium or unfamiliar wines. Specialist retail can offer hand-selling, repeat purchase, mixed cases and deeper producer storytelling. Restaurants may involve lower volumes, high mark-ups and by-the-glass pressure, while retail can face shelf competition and discounting. The best answer compares channel goals: awareness, margin, volume, prestige and customer relationship.",
+    "marking_points": ["Compares advocacy in both channels", "Discusses margin and volume", "Mentions by-the-glass and list placement", "Addresses repeat purchase", "Links channel to brand objective"],
+    "common_traps": ["Assuming restaurant listing always means profit", "Ignoring retail hand-selling", "Forgetting customer data and repeat behaviour"],
+    "follow_up_topics": ["On-trade strategy", "Specialist retail", "By-the-glass economics"]
+  },
+  {
+    "id": "mw-039",
+    "category": "Global wine regions",
+    "difficulty": "MW-style",
+    "prompt": "Evaluate the potential for premium still wines from England and Wales beyond sparkling wine.",
+    "model_answer": "Warmer seasons, improved clones, better site selection and producer ambition are increasing the viability of still Chardonnay, Pinot Noir, Bacchus and other styles. Opportunities include local identity, tourism, freshness and domestic market support. Challenges include vintage variability, high land and labour costs, limited yields, consumer price expectations and competition from established regions. A strong answer avoids hype and asks which varieties, sites and styles can justify premium pricing consistently.",
+    "marking_points": ["Discusses climate change and vintage variability", "Mentions key varieties and site selection", "Addresses production costs and pricing", "Considers domestic and export markets", "Makes a style-specific judgement"],
+    "common_traps": ["Assuming sparkling success transfers automatically", "Ignoring cost base", "Overlooking poor vintages"],
+    "follow_up_topics": ["English still Chardonnay", "Bacchus market positioning", "UK vineyard economics"]
+  },
+  {
+    "id": "mw-040",
+    "category": "Current issues",
+    "difficulty": "Exam pressure",
+    "prompt": "Critically assess the claim that old vines are inherently more sustainable and produce better wine.",
+    "model_answer": "Old vines may have deep roots, balanced yields, genetic diversity and cultural value, and can produce concentrated wines when well managed. Sustainability claims may include preservation of heritage vineyards and reduced replanting. However, old vines can be diseased, low yielding, economically vulnerable and not automatically better adapted to future conditions. Quality depends on site, health, variety, management and winemaking. A strong answer separates romantic narrative from measurable outcomes.",
+    "marking_points": ["Explains possible quality mechanisms", "Addresses heritage and genetic diversity", "Considers disease and economic viability", "Challenges automatic sustainability claims", "Defines what evidence would be needed"],
+    "common_traps": ["Equating age with quality", "Ignoring yield economics", "Using heritage language without analysis"],
+    "follow_up_topics": ["Old vine certification", "Grapevine trunk disease", "Heritage vineyard economics"]
+  },
+  {
+    "id": "mw-041",
+    "category": "Tasting logic",
+    "difficulty": "Warm-up",
+    "prompt": "Discuss how residual sugar can distort conclusions about acidity, body and origin in blind tasting.",
+    "model_answer": "Residual sugar can make acidity seem lower, increase body, soften bitterness and enhance fruit intensity. It may lead tasters to misread climate, ripeness or variety if they do not separate sweetness from fruitiness. In high-acid wines, sugar may be balanced and subtle; in lower-acid wines it can feel clumsy. A good answer uses structural checks, finish, viscosity and flavour persistence to identify sugar and avoid false conclusions about origin.",
+    "marking_points": ["Explains sugar-acid balance", "Distinguishes sweetness from fruitiness", "Discusses body and finish", "Mentions variety and regional examples", "Shows how to avoid misidentification"],
+    "common_traps": ["Missing low-level residual sugar", "Equating sweetness with warm climate", "Ignoring acidity on the finish"],
+    "follow_up_topics": ["Sugar-acid balance", "Off-dry Riesling", "Blind tasting structure"]
+  },
+  {
+    "id": "mw-042",
+    "category": "Research paper skills",
+    "difficulty": "Exam pressure",
+    "prompt": "Assess how to present limitations in an MW research paper without weakening the argument.",
+    "model_answer": "Limitations should show methodological maturity, not apology. The paper should explain constraints such as sample size, respondent bias, data availability, geography and time frame, then state how the method still supports the research question. Good limitation sections distinguish what can be concluded from what cannot, and may recommend future research. The argument is strengthened when claims are proportionate to evidence and triangulation is used where possible.",
+    "marking_points": ["Frames limitations as methodological transparency", "Identifies common limitation types", "Links limitations to claim scope", "Mentions triangulation", "Avoids overclaiming"],
+    "common_traps": ["Hiding limitations", "Listing weaknesses without implications", "Letting limitations invalidate the whole paper"],
+    "follow_up_topics": ["Discussion chapter structure", "Research validity", "Evidence-based conclusions"]
+  },
+  {
+    "id": "mw-043",
+    "category": "Viticulture",
+    "difficulty": "Warm-up",
+    "prompt": "Evaluate the main trade-offs in choosing an early-ripening grape variety for a warming region.",
+    "model_answer": "Early-ripening varieties may avoid late-season heat, drought or autumn rain and can preserve acidity in some climates. In warming regions they may instead accumulate sugar too rapidly, lose acid and require earlier harvest before flavour or phenolic maturity. They can also shift labour peaks and winery intake timing. The best answer weighs climate trajectory, market demand, wine style, disease pressure, water availability and the long-term cost of replanting.",
+    "marking_points": ["Explains harvest timing and ripeness balance", "Considers acid, sugar and phenolics", "Mentions disease and labour timing", "Addresses market suitability", "Recognises long-term planting risk"],
+    "common_traps": ["Assuming early ripening is always adaptive", "Ignoring consumer demand", "Forgetting winery capacity"],
+    "follow_up_topics": ["Varietal adaptation", "Phenolic maturity", "Harvest logistics"]
+  },
+  {
+    "id": "mw-044",
+    "category": "Vinification",
+    "difficulty": "MW-style",
+    "prompt": "Discuss the role of malolactic conversion in balancing freshness, stability and style in premium red and white wines.",
+    "model_answer": "Malolactic conversion reduces malic acidity, increases microbial stability and can add buttery, creamy or textural notes depending on organism, timing and wine matrix. In reds it is generally expected for stability and softness, though timing affects aroma and integration. In whites it may be full, partial or blocked depending on desired freshness, pH, variety and market style. Strong answers compare technical necessity with stylistic choice and consider sulphur, temperature, pH and microbial risk.",
+    "marking_points": ["Explains acid change and stability", "Compares red and white applications", "Discusses sensory impact", "Mentions pH, sulphur and timing", "Recognises partial or blocked options"],
+    "common_traps": ["Saying MLF only creates butter", "Ignoring microbial stability", "Assuming all whites should avoid MLF"],
+    "follow_up_topics": ["Oenococcus oeni", "Diacetyl management", "Partial malolactic conversion"]
+  },
+  {
+    "id": "mw-045",
+    "category": "Wine business",
+    "difficulty": "MW-style",
+    "prompt": "Evaluate whether regional generic bodies should prioritise education, promotion or regulation when seeking premium recognition.",
+    "model_answer": "Education builds trade and consumer understanding, promotion creates visibility and demand, while regulation can protect standards and clarify identity. Premium recognition usually needs all three, but priorities depend on region maturity. Emerging regions may first need education and coherent messaging; established regions may need regulation to protect reputation or promotion to defend market share. The strongest answer considers funding, producer alignment, export markets, appellation complexity and measurable outcomes.",
+    "marking_points": ["Defines education, promotion and regulation roles", "Links priority to region maturity", "Discusses producer alignment and funding", "Considers export market needs", "Offers measurable success criteria"],
+    "common_traps": ["Choosing one function in isolation", "Ignoring producer disagreement", "Assuming stricter regulation always helps"],
+    "follow_up_topics": ["Generic wine bodies", "Appellation reform", "Regional marketing"]
+  },
+  {
+    "id": "mw-046",
+    "category": "Global wine regions",
+    "difficulty": "Warm-up",
+    "prompt": "Compare the drivers of quality in Marlborough Sauvignon Blanc and Sancerre.",
+    "model_answer": "Marlborough quality is driven by intense aromatics, cool nights, strong sunlight, canopy control, rapid protective winemaking and subregional diversity, with styles ranging from pungent to textured. Sancerre relies on Loire climate, limestone and flint-associated sites, restrained fruit, acidity, texture and appellation identity. Both depend on yield control and picking decisions. A strong answer avoids caricature and compares climate, soils, winemaking, market expectations and premium style evolution.",
+    "marking_points": ["Compares climate and aromatic profile", "Discusses protective winemaking and texture", "Mentions subregional or site diversity", "Addresses market expectations", "Avoids stereotypes"],
+    "common_traps": ["Calling all Marlborough simple", "Attributing Sancerre only to soil", "Ignoring producer style"],
+    "follow_up_topics": ["Marlborough subregions", "Sancerre soils", "Sauvignon thiols"]
+  },
+  {
+    "id": "mw-047",
+    "category": "Current issues",
+    "difficulty": "MW-style",
+    "prompt": "Assess how changing patterns of wine consumption among younger adults should influence premium wine communication.",
+    "model_answer": "Younger adults in many markets drink less frequently, value authenticity, moderation, experiences, sustainability and transparency, and discover products through digital and social channels. Premium communication should focus on occasion, story, food, place, farming and emotional relevance rather than inherited prestige alone. However, generalisations are risky across income, culture and geography. Strong answers discuss accessibility without dumbing down, price barriers, format innovation and the need to preserve credibility.",
+    "marking_points": ["Addresses moderation and occasion change", "Discusses digital discovery", "Mentions sustainability and authenticity", "Considers price and accessibility", "Avoids stereotyping a whole generation"],
+    "common_traps": ["Assuming young consumers reject premium wine", "Using vague social media advice", "Ignoring cultural and income differences"],
+    "follow_up_topics": ["Gen Z beverage trends", "Premium wine storytelling", "No/low alcohol competition"]
+  },
+  {
+    "id": "mw-048",
+    "category": "Tasting logic",
+    "difficulty": "Exam pressure",
+    "prompt": "Critically examine how oak can mislead blind tasters when assessing variety, quality and origin.",
+    "model_answer": "Oak can add vanilla, spice, toast, smoke, cedar, sweetness and texture that may mask fruit character or suggest varieties and regions associated with barrel use. New oak can inflate perceived quality through polish, while poor integration can reveal imbalance. Oak origin, age, toast, size and time all alter effect. A strong tasting answer separates oak-derived characters from fruit, acid, tannin and alcohol, and judges whether oak supports or dominates the wine.",
+    "marking_points": ["Identifies oak-derived aromas and textures", "Explains barrel variables", "Discusses masking of variety and origin", "Links integration to quality", "Uses structure to cross-check conclusions"],
+    "common_traps": ["Assuming expensive oak means high quality", "Confusing toast with bottle age", "Letting oak override structural evidence"],
+    "follow_up_topics": ["Oak species and toast", "Barrel size", "Oak integration in tasting"]
+  },
+  {
+    "id": "mw-049",
+    "category": "Research paper skills",
+    "difficulty": "MW-style",
+    "prompt": "Evaluate the role of charts and tables in an MW research paper.",
+    "model_answer": "Charts and tables should clarify evidence, reveal patterns and support analysis, not decorate the paper or duplicate prose. Good visuals are simple, labelled, sourced and directly discussed in the text. Tables suit precise comparisons or respondent profiles; charts suit trends, proportions or relationships. Poor visuals can mislead through inappropriate scales, clutter or unrepresentative data. Strong answers emphasise that every visual should answer part of the research question.",
+    "marking_points": ["Distinguishes charts and tables", "Links visuals to analysis", "Mentions labelling, sourcing and scale", "Avoids duplication with prose", "Discusses clarity and relevance"],
+    "common_traps": ["Adding charts because they look academic", "Not explaining visuals in the text", "Using misleading axes or categories"],
+    "follow_up_topics": ["Data visualisation", "Research paper formatting", "Evidence presentation"]
+  },
+  {
+    "id": "mw-050",
+    "category": "Viticulture",
+    "difficulty": "MW-style",
+    "prompt": "Assess whether machine harvesting can be compatible with premium wine production.",
+    "model_answer": "Machine harvesting can be compatible with premium wine when fruit is healthy, vineyard design suits machinery, harvest timing is precise and winery intake is rapid. It offers speed, night harvesting, labour resilience and cost control. Risks include berry damage, MOG, oxidation, loss of whole-bunch options and unsuitability for steep or fragile sites. The answer should compare variety, wine style, terrain, sorting technology, labour availability and climate pressure. Premium quality depends on management, not hand-picking ideology.",
+    "marking_points": ["Discusses speed and night harvesting", "Addresses fruit damage and MOG", "Considers vineyard terrain and design", "Links to wine style and whole-bunch needs", "Avoids assuming hand harvest is always superior"],
+    "common_traps": ["Treating machine harvesting as entry-level only", "Ignoring labour shortages", "Forgetting sorting and rapid processing"],
+    "follow_up_topics": ["Optical sorting", "Night harvesting", "Harvest labour economics"]
+  }
+]

@@ -1,0 +1,1 @@
+"""MW Daily application package."""

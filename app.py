@@ -84,58 +84,62 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-left, right = st.columns([0.64, 0.36], vertical_alignment="top")
+left, right = st.columns([0.62, 0.38], vertical_alignment="top")
 
 with right:
-    st.subheader("Mode")
-    mode = st.radio(
-        "Choose study mode",
-        ["Daily question", "Random question"],
-        label_visibility="collapsed",
-    )
-
-    if mode == "Random question":
-        if "random_question_id" not in st.session_state:
-            st.session_state.random_question_id = random.choice(questions)["id"]
-        if st.button("New random question"):
-            st.session_state.random_question_id = random.choice(questions)["id"]
-        active_question = next(
-            question for question in questions if question["id"] == st.session_state.random_question_id
+    with st.container(border=True):
+        st.subheader("Question controls")
+        st.markdown(
+            '<p class="workspace-label">Choose the prompt, then rate whether it is worth Sara\'s time.</p>',
+            unsafe_allow_html=True,
         )
-    else:
-        active_question = question_for_day(questions)
+        mode = st.radio(
+            "Mode",
+            ["Daily question", "Random question"],
+        )
 
-    st.caption(f"Study date: {date.today().isoformat()}")
-    st.divider()
-    st.subheader("Question feedback")
-    quality_key = f"quality_{active_question['id']}_{mode}"
-    feedback_key = f"feedback_{active_question['id']}_{mode}"
-    quality = st.slider(
-        "Question usefulness",
-        min_value=1,
-        max_value=5,
-        value=4,
-        key=quality_key,
-        help="1 = not useful, 5 = excellent practice question.",
-    )
-    question_feedback = st.text_area(
-        "Notes on this question",
-        key=feedback_key,
-        height=130,
-        placeholder="Optional: too easy, too broad, great topic, needs more tasting logic, not exam-like enough...",
-    )
+        if mode == "Random question":
+            if "random_question_id" not in st.session_state:
+                st.session_state.random_question_id = random.choice(questions)["id"]
+            if st.button("New random question", use_container_width=True):
+                st.session_state.random_question_id = random.choice(questions)["id"]
+            active_question = next(
+                question for question in questions if question["id"] == st.session_state.random_question_id
+            )
+        else:
+            active_question = question_for_day(questions)
+
+        st.caption(f"Study date: {date.today().isoformat()}")
+        quality_key = f"quality_{active_question['id']}_{mode}"
+        feedback_key = f"feedback_{active_question['id']}_{mode}"
+        quality = st.slider(
+            "Question usefulness",
+            min_value=1,
+            max_value=5,
+            value=4,
+            key=quality_key,
+            help="1 = not useful, 5 = excellent practice question.",
+        )
+        question_feedback = st.text_area(
+            "Question notes",
+            key=feedback_key,
+            height=118,
+            placeholder="Too easy, too broad, great topic, needs more tasting logic...",
+        )
 
 with left:
     render_question_card(active_question, mode)
-
-st.divider()
 
 answer_key = f"answer_{active_question['id']}_{mode}"
 reveal_key = f"revealed_{active_question['id']}_{mode}"
 timer_key = f"timer_{active_question['id']}_{mode}"
 
 with st.container(border=True):
-    st.subheader("Timed answer")
+    st.subheader("Response workspace")
+    st.markdown(
+        '<p class="workspace-label">Time the attempt, write the answer, or open the model answer as a study aid.</p>',
+        unsafe_allow_html=True,
+    )
     timer_running, elapsed_seconds = timer_state(timer_key)
     timer_columns = st.columns([0.2, 0.2, 0.2, 0.4], vertical_alignment="center")
 
@@ -156,35 +160,35 @@ with st.container(border=True):
     with timer_columns[3]:
         st.metric("Time taken", format_duration(elapsed_seconds))
 
-answer = st.text_area(
-    "Sara's answer",
-    key=answer_key,
-    height=260,
-    placeholder="Write a structured MW-style answer: define the issue, compare causes or options, weigh trade-offs, then reach a judgement.",
-)
+    answer = st.text_area(
+        "Sara's answer",
+        key=answer_key,
+        height=260,
+        placeholder="Write a structured MW-style answer: define the issue, compare causes or options, weigh trade-offs, then reach a judgement.",
+    )
 
-save_col, reveal_col = st.columns([0.28, 0.72], vertical_alignment="center")
-with save_col:
-    if st.button("Save", type="primary", use_container_width=True):
-        if answer.strip() or question_feedback.strip():
-            save_attempt(
-                {
-                    "question_id": active_question["id"],
-                    "study_date": date.today().isoformat(),
-                    "mode": mode,
-                    "answer": answer.strip(),
-                    "time_seconds": elapsed_seconds,
-                    "question_quality": quality,
-                    "question_feedback": question_feedback.strip(),
-                }
-            )
-            st.success("Saved.")
-        else:
-            st.warning("Write an answer or add question feedback before saving.")
+    save_col, reveal_col = st.columns([0.28, 0.72], vertical_alignment="center")
+    with save_col:
+        if st.button("Save", type="primary", use_container_width=True):
+            if answer.strip() or question_feedback.strip():
+                save_attempt(
+                    {
+                        "question_id": active_question["id"],
+                        "study_date": date.today().isoformat(),
+                        "mode": mode,
+                        "answer": answer.strip(),
+                        "time_seconds": elapsed_seconds,
+                        "question_quality": quality,
+                        "question_feedback": question_feedback.strip(),
+                    }
+                )
+                st.success("Saved.")
+            else:
+                st.warning("Write an answer or add question feedback before saving.")
 
-with reveal_col:
-    if st.button("Show model answer", use_container_width=True):
-        st.session_state[reveal_key] = True
+    with reveal_col:
+        if st.button("Show model answer", use_container_width=True):
+            st.session_state[reveal_key] = True
 
 if st.session_state.get(reveal_key, False):
     st.divider()

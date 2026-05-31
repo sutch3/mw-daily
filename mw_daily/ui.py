@@ -48,8 +48,8 @@ def apply_global_styles() -> None:
         }
 
         .block-container {
-            max-width: 1120px;
-            padding-top: 2.4rem;
+            max-width: 1040px;
+            padding-top: 1.4rem;
             padding-bottom: 4rem;
         }
 
@@ -62,13 +62,10 @@ def apply_global_styles() -> None:
         }
 
         .hero-panel {
-            border: 1px solid var(--line);
-            border-top: 6px solid var(--burgundy);
-            border-radius: 8px;
-            background: #FFFFFF;
-            box-shadow: var(--shadow);
-            padding: 1.45rem 1.55rem;
-            margin-bottom: 1.45rem;
+            border-bottom: 1px solid var(--line);
+            background: transparent;
+            padding: 0.4rem 0 1.05rem;
+            margin-bottom: 1.15rem;
         }
 
         .hero-row {
@@ -104,7 +101,7 @@ def apply_global_styles() -> None:
 
         .hero-title {
             font-family: Georgia, serif;
-            font-size: clamp(2.1rem, 5vw, 3.45rem);
+            font-size: clamp(2rem, 4.2vw, 3rem);
             font-weight: 700;
             line-height: 1.03;
             margin: 0;
@@ -125,7 +122,7 @@ def apply_global_styles() -> None:
             border-radius: 8px;
             padding: 1.45rem;
             background: #FFFFFF;
-            box-shadow: var(--shadow);
+            box-shadow: 0 10px 34px rgba(35, 31, 32, 0.06);
             position: relative;
         }
 
@@ -185,6 +182,13 @@ def apply_global_styles() -> None:
         .section-rule {
             border-top: 1px solid var(--line);
             margin: 1.2rem 0;
+        }
+
+        .workspace-label {
+            color: var(--muted);
+            font-size: 0.88rem;
+            margin-top: -0.45rem;
+            margin-bottom: 0.8rem;
         }
 
         div.stButton > button {

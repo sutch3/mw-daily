@@ -1,0 +1,242 @@
+[
+  {
+    "id": "mw-001",
+    "category": "Viticulture",
+    "difficulty": "MW-style",
+    "prompt": "Evaluate the effectiveness of canopy management as a response to warmer growing seasons in premium cool-climate Pinot Noir production.",
+    "model_answer": "A strong answer should treat canopy management as one tool within a wider adaptation strategy. It can reduce sunburn through shading, slow sugar accumulation where leaf area is retained, improve airflow where disease pressure remains high, and protect aromatic delicacy. However, excessive shading can reduce phenolic maturity, increase methoxypyrazine risk in some varieties, and delay ripening into less favourable autumn conditions. The best judgement is site-specific: row orientation, clone, rootstock, soil water status, disease pressure, labour availability and target wine style all alter the optimal balance.",
+    "marking_points": [
+      "Links canopy density to sugar, acid and phenolic development",
+      "Considers sunburn, heat spikes and disease pressure",
+      "Mentions row orientation, leaf removal timing and shoot positioning",
+      "Balances fruit exposure with aromatic and textural goals",
+      "Reaches a qualified judgement rather than a blanket recommendation"
+    ],
+    "common_traps": [
+      "Assuming more leaf removal is always better",
+      "Ignoring labour cost and timing",
+      "Discussing climate change without linking back to Pinot Noir style"
+    ],
+    "follow_up_topics": [
+      "Pinot Noir clonal selection",
+      "Heatwave management",
+      "Cool-climate canopy trials"
+    ]
+  },
+  {
+    "id": "mw-002",
+    "category": "Vinification",
+    "difficulty": "Exam pressure",
+    "prompt": "Critically examine the use of whole-bunch fermentation in Syrah, comparing its technical risks with its potential stylistic benefits.",
+    "model_answer": "Whole-bunch Syrah can add perfume, spice, structure and freshness, partly through intracellular fermentation, stem-derived phenolics and altered cap management. It can also reduce perceived fruit weight and contribute a lifted, savoury register prized in some cool-climate and Northern Rhone-inspired styles. Risks include green tannins, elevated pH, microbial pockets in intact bunches, inconsistent extraction and excessive carbonic character. The decision depends on stem lignification, fruit ripeness, bunch health, vessel type, temperature control and intended market positioning.",
+    "marking_points": [
+      "Explains stem lignification and tannin quality",
+      "Connects technique to aroma, texture and freshness",
+      "Addresses microbial and extraction management",
+      "Compares warm and cool climate suitability",
+      "Identifies market and style implications"
+    ],
+    "common_traps": [
+      "Equating whole bunch only with carbonic maceration",
+      "Ignoring stem maturity",
+      "Listing flavours without explaining mechanism"
+    ],
+    "follow_up_topics": [
+      "Stem tannin chemistry",
+      "Northern Rhone vinification",
+      "Cap management options"
+    ]
+  },
+  {
+    "id": "mw-003",
+    "category": "Wine business",
+    "difficulty": "MW-style",
+    "prompt": "Assess whether direct-to-consumer sales are a sustainable growth strategy for small premium wineries.",
+    "model_answer": "DTC can increase margin, customer data ownership and brand loyalty, especially through cellar door, allocation lists and wine clubs. It can also reduce distributor dependence. Sustainability depends on traffic, digital capability, fulfilment, compliance, customer acquisition cost and retention. Small wineries may underestimate the operational burden of service, logistics and content creation. A balanced answer should argue that DTC is powerful when integrated with hospitality and brand storytelling, but risky if treated as a cheap substitute for professional route-to-market planning.",
+    "marking_points": [
+      "Discusses margin and cash-flow advantages",
+      "Considers fulfilment, compliance and customer service",
+      "Addresses acquisition versus retention economics",
+      "Compares DTC with distributor/importer routes",
+      "Links strategy to premium positioning"
+    ],
+    "common_traps": [
+      "Assuming DTC has no cost",
+      "Ignoring legal restrictions by market",
+      "Forgetting the winery's scale and visitor access"
+    ],
+    "follow_up_topics": [
+      "Wine club economics",
+      "Three-tier system",
+      "Cellar door conversion rates"
+    ]
+  },
+  {
+    "id": "mw-004",
+    "category": "Global wine regions",
+    "difficulty": "Warm-up",
+    "prompt": "Compare the main factors shaping quality and style in Chablis and the Cote de Beaune for Chardonnay.",
+    "model_answer": "Chablis is shaped by a cooler, more marginal climate, frost risk, Kimmeridgian-influenced soils in key sites and a tradition of restrained oak use, often producing higher acid, citrus and mineral profiles. The Cote de Beaune is generally warmer, with greater ripeness, more frequent oak fermentation or maturation, and a broader range from village to grand cru richness. Quality in both depends on site, yield, vine age, producer decisions and vintage. The best comparison recognises that regional identity is created by both environment and winemaking convention.",
+    "marking_points": [
+      "Compares climate and ripening",
+      "Mentions frost and vintage variability",
+      "Discusses oak and lees handling",
+      "Explains site hierarchy and producer effect",
+      "Avoids simplistic soil determinism"
+    ],
+    "common_traps": [
+      "Saying Chablis never uses oak",
+      "Overstating soil as the sole cause of style",
+      "Ignoring vintage variation"
+    ],
+    "follow_up_topics": [
+      "Burgundy appellation hierarchy",
+      "Frost protection",
+      "Chardonnay lees ageing"
+    ]
+  },
+  {
+    "id": "mw-005",
+    "category": "Current issues",
+    "difficulty": "MW-style",
+    "prompt": "Discuss the implications of lighter glass bottles for premium wine producers, considering sustainability, brand perception and supply chain realities.",
+    "model_answer": "Lighter glass can reduce transport emissions, material use and cost, making it one of the clearest sustainability interventions available to bottled wine. Premium producers may fear that lighter bottles weaken quality cues, particularly in markets where weight has become a proxy for luxury. Supply chain constraints include bottle availability, line compatibility, breakage testing and retailer pressure. A persuasive answer should argue that category norms can change when producers, importers and retailers align messaging around quality, provenance and environmental responsibility.",
+    "marking_points": [
+      "Quantifies or explains packaging's role in carbon footprint",
+      "Addresses consumer psychology and premium cues",
+      "Considers bottling line and logistics constraints",
+      "Mentions retailer or monopoly pressure",
+      "Offers a realistic transition strategy"
+    ],
+    "common_traps": [
+      "Treating sustainability as only vineyard practice",
+      "Ignoring perceived luxury",
+      "Assuming all bottle formats are immediately interchangeable"
+    ],
+    "follow_up_topics": [
+      "Wine packaging emissions",
+      "Luxury signalling",
+      "Alternative packaging formats"
+    ]
+  },
+  {
+    "id": "mw-006",
+    "category": "Tasting logic",
+    "difficulty": "MW-style",
+    "prompt": "Assess how acid profile, tannin quality and aroma development can be used together to distinguish Nebbiolo from Sangiovese in blind tasting.",
+    "model_answer": "Both varieties can show high acidity and savoury red-fruited profiles, so the answer should avoid single-marker thinking. Nebbiolo often combines pale colour, high acid, firm drying tannins, floral or tar-like aromatics and slow-developing tertiary notes. Sangiovese more often shows sour cherry, herbal or earthy notes, medium to high tannins, and a broader range of colour depending on region and extraction. Oak, age, site and winemaking can blur signals, so the taster should build a probability argument across structure, aroma and regional style.",
+    "marking_points": [
+      "Compares colour, acid and tannin together",
+      "Mentions floral, tar, cherry, herbal and earthy clues",
+      "Considers age and oak effects",
+      "Recognises overlap and uncertainty",
+      "Links tasting evidence to likely region/style"
+    ],
+    "common_traps": [
+      "Using one aroma as proof",
+      "Ignoring colour intensity",
+      "Failing to account for bottle age"
+    ],
+    "follow_up_topics": [
+      "Italian red blind tasting grids",
+      "Nebbiolo tannin development",
+      "Sangiovese regional styles"
+    ]
+  },
+  {
+    "id": "mw-007",
+    "category": "Research paper skills",
+    "difficulty": "Warm-up",
+    "prompt": "Evaluate what makes a strong Master of Wine research paper topic, using examples from sustainability, consumer behaviour or production practice.",
+    "model_answer": "A strong topic is focused, researchable, original enough to add value, and narrow enough to answer with available time and data. It should have a clear research question, defined population or market, accessible evidence and practical relevance to the wine trade. Broad themes such as sustainability or consumer behaviour need narrowing into measurable questions. The best topics balance academic rigour with industry usefulness and avoid becoming opinion essays or descriptive surveys.",
+    "marking_points": [
+      "Defines scope and researchability",
+      "Mentions data access and methodology",
+      "Addresses originality and trade relevance",
+      "Distinguishes research question from theme",
+      "Gives plausible narrowed examples"
+    ],
+    "common_traps": [
+      "Choosing a topic that is too broad",
+      "Confusing advocacy with research",
+      "Ignoring data availability"
+    ],
+    "follow_up_topics": [
+      "Research question design",
+      "Survey methodology",
+      "Literature review strategy"
+    ]
+  },
+  {
+    "id": "mw-008",
+    "category": "Viticulture",
+    "difficulty": "Exam pressure",
+    "prompt": "Critically examine deficit irrigation as a quality tool in regions facing increasing water scarcity.",
+    "model_answer": "Deficit irrigation can control vigour, reduce berry size, improve skin-to-pulp ratio and support concentration when applied carefully after fruit set or around veraison. In water-scarce regions it may also be a necessity, not merely a quality choice. Risks include blocked ripening, excessive tannin, yield loss, salinity build-up and long-term vine stress. The answer should weigh soil type, root depth, variety, rootstock, water rights, monitoring technology and social licence. Quality claims must be balanced against sustainability and resilience.",
+    "marking_points": [
+      "Explains timing and vine physiological response",
+      "Links water stress to berry composition",
+      "Considers salinity and long-term vine health",
+      "Discusses regulation and water rights",
+      "Evaluates sustainability beyond wine quality"
+    ],
+    "common_traps": [
+      "Treating stress as always beneficial",
+      "Ignoring soil and rootstock",
+      "Forgetting community competition for water"
+    ],
+    "follow_up_topics": [
+      "Regulated deficit irrigation",
+      "Pressure chamber use",
+      "Drought-tolerant rootstocks"
+    ]
+  },
+  {
+    "id": "mw-009",
+    "category": "Vinification",
+    "difficulty": "MW-style",
+    "prompt": "Discuss the advantages and limitations of spontaneous fermentation for premium white wines.",
+    "model_answer": "Spontaneous fermentation may contribute complexity, texture and a stronger sense of place through diverse yeast populations and slower fermentation kinetics. It can be valuable for premium producers seeking differentiation. Limitations include sluggish or stuck fermentations, volatile acidity, sulphide production, inconsistent outcomes and higher monitoring demands. Fruit condition, cellar hygiene, temperature control, nutrient status and tolerance for variability are decisive. A nuanced answer should avoid romanticising wild ferments and compare them with selected yeast strategies.",
+    "marking_points": [
+      "Explains microbial diversity and sensory effects",
+      "Addresses stuck fermentation and spoilage risks",
+      "Considers nutrient and temperature management",
+      "Compares with selected yeast reliability",
+      "Links decision to premium brand positioning"
+    ],
+    "common_traps": [
+      "Assuming spontaneous equals better terroir expression",
+      "Ignoring hygiene",
+      "Forgetting white wine oxidation risk"
+    ],
+    "follow_up_topics": [
+      "Non-Saccharomyces yeasts",
+      "YAN management",
+      "Fermentation temperature effects"
+    ]
+  },
+  {
+    "id": "mw-010",
+    "category": "Wine business",
+    "difficulty": "Warm-up",
+    "prompt": "Assess the role of importers in building demand for emerging wine regions.",
+    "model_answer": "Importers can curate quality, explain unfamiliar regions, manage logistics, support education and reduce risk for restaurants and retailers. For emerging regions, they often act as translators between producer identity and market expectations. Their influence is limited by margin pressure, small allocations, inconsistent supply and the need to justify shelf or list space against established regions. Strong answers should show how importer credibility, storytelling and channel selection can accelerate adoption but cannot compensate for weak quality or unclear positioning.",
+    "marking_points": [
+      "Explains importer as curator and educator",
+      "Addresses logistics and compliance",
+      "Links channel choice to region building",
+      "Considers supply consistency and pricing",
+      "Notes limits of storytelling"
+    ],
+    "common_traps": [
+      "Describing importers only as middlemen",
+      "Ignoring restaurant and retail influence",
+      "Assuming novelty automatically sells"
+    ],
+    "follow_up_topics": [
+      "Route to market",
+      "On-trade influence",
+      "Regional branding"
+    ]
+  }
+]

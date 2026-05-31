@@ -1,0 +1,242 @@
+[
+  {
+    "id": "mw-021",
+    "category": "Research paper skills",
+    "difficulty": "Exam pressure",
+    "prompt": "Discuss how to design a survey that produces useful evidence for an MW research paper on consumer attitudes to alternative wine packaging.",
+    "model_answer": "The survey needs a precise research question, defined target population and sampling plan. Questions should avoid leading wording, separate awareness from purchase intent, and include relevant demographics, occasions, price points and packaging formats. Visual stimuli may help but must be controlled. Results should be analysed with clear limitations around sample bias and stated behaviour versus actual purchase. The best answer explains how survey evidence would be triangulated with sales data, retailer interviews or existing literature.",
+    "marking_points": [
+      "Defines population and sampling method",
+      "Avoids leading or double-barrelled questions",
+      "Includes price, occasion and format variables",
+      "Acknowledges bias and stated-intent limitations",
+      "Recommends triangulation"
+    ],
+    "common_traps": [
+      "Surveying only friends and treating it as representative",
+      "Asking vague attitude questions",
+      "Ignoring actual purchase behaviour"
+    ],
+    "follow_up_topics": [
+      "Questionnaire design",
+      "Sampling bias",
+      "Packaging adoption research"
+    ]
+  },
+  {
+    "id": "mw-022",
+    "category": "Viticulture",
+    "difficulty": "Warm-up",
+    "prompt": "Assess the importance of rootstock choice for quality wine production in drought-prone vineyards.",
+    "model_answer": "Rootstock affects drought tolerance, vigour, nutrient uptake, salinity tolerance, pest resistance and vine balance. In drought-prone vineyards, deep rooting and efficient water use can protect yield and ripening continuity. However, rootstock cannot overcome poor site choice, shallow soils or inadequate water availability. The choice must match variety, soil chemistry, nematode or phylloxera pressure, desired vigour and long-term climate projections. Quality comes from balanced vine growth rather than drought tolerance alone.",
+    "marking_points": [
+      "Explains water uptake and vigour effects",
+      "Mentions soil, salinity and pest resistance",
+      "Links rootstock to vine balance and ripening",
+      "Considers long-term planting decisions",
+      "Avoids presenting one universal best rootstock"
+    ],
+    "common_traps": [
+      "Naming rootstocks without explaining trade-offs",
+      "Ignoring scion compatibility",
+      "Treating drought tolerance as the only criterion"
+    ],
+    "follow_up_topics": [
+      "Drought-tolerant rootstocks",
+      "Root architecture",
+      "Salinity management"
+    ]
+  },
+  {
+    "id": "mw-023",
+    "category": "Vinification",
+    "difficulty": "Exam pressure",
+    "prompt": "Critically examine the use of oak alternatives in wines positioned above entry level.",
+    "model_answer": "Oak alternatives can provide cost-effective flavour, tannin and oxygen-management options, especially where new barrels are uneconomic. For above-entry wines, careful use of staves, chips or adjuncts can support consistency and value, but risks include obvious flavour, poor integration and negative perception if transparency or quality cues matter. The answer should compare sensory outcome, cost, sustainability, regulation, market expectations and the difference between technical legitimacy and premium storytelling.",
+    "marking_points": [
+      "Compares alternatives with barrels technically and commercially",
+      "Addresses flavour integration and texture",
+      "Mentions oxygen exposure differences",
+      "Considers legal and market perception issues",
+      "Makes a segment-specific judgement"
+    ],
+    "common_traps": [
+      "Dismissing alternatives as always inferior",
+      "Ignoring cost and sustainability",
+      "Forgetting oxygen transfer differences"
+    ],
+    "follow_up_topics": [
+      "Oak adjunct regulation",
+      "Micro-oxygenation",
+      "Barrel economics"
+    ]
+  },
+  {
+    "id": "mw-024",
+    "category": "Wine business",
+    "difficulty": "MW-style",
+    "prompt": "Evaluate the strategic value of wine tourism for regional brand building.",
+    "model_answer": "Wine tourism can turn abstract regional names into memorable experiences, supporting DTC sales, hospitality revenue, loyalty and word-of-mouth. It helps smaller regions communicate landscape, food culture and producer personality. Limitations include seasonality, infrastructure, staff costs, rural access, regulatory barriers and vulnerability to travel shocks. The strongest answer treats tourism as part of a regional ecosystem involving producers, restaurants, accommodation, local government and export messaging.",
+    "marking_points": [
+      "Links tourism to regional identity and loyalty",
+      "Addresses DTC and hospitality revenue",
+      "Considers infrastructure and seasonality",
+      "Mentions collaboration across stakeholders",
+      "Recognises limits for export markets"
+    ],
+    "common_traps": [
+      "Assuming tourism only benefits individual wineries",
+      "Ignoring staff and infrastructure",
+      "Forgetting non-visitor consumers"
+    ],
+    "follow_up_topics": [
+      "Regional wine routes",
+      "Cellar door strategy",
+      "Place branding"
+    ]
+  },
+  {
+    "id": "mw-025",
+    "category": "Global wine regions",
+    "difficulty": "Warm-up",
+    "prompt": "Compare the stylistic identity of Rioja and Ribera del Duero for premium Tempranillo.",
+    "model_answer": "Rioja often balances Tempranillo with regional blending traditions, American or French oak influence, acidity and a spectrum from traditional savoury styles to modern fruit-driven wines. Ribera del Duero is generally more continental, with greater diurnal range, deeper colour, firmer tannins and powerful black-fruited profiles. Both regions now show wide producer diversity. Strong answers should discuss climate, altitude, soils, oak ageing classifications, blending, market reputation and the evolution of style.",
+    "marking_points": [
+      "Compares climate and structure",
+      "Mentions oak and ageing classifications",
+      "Addresses blending traditions",
+      "Recognises modern stylistic diversity",
+      "Links style to market positioning"
+    ],
+    "common_traps": [
+      "Treating Rioja as only traditional",
+      "Ignoring altitude in Ribera",
+      "Overstating legal categories as quality guarantees"
+    ],
+    "follow_up_topics": [
+      "Rioja classification changes",
+      "Ribera del Duero climate",
+      "Tempranillo oak ageing"
+    ]
+  },
+  {
+    "id": "mw-026",
+    "category": "Current issues",
+    "difficulty": "MW-style",
+    "prompt": "Assess the likely impact of artificial intelligence on the wine trade over the next decade.",
+    "model_answer": "AI may affect vineyard monitoring, yield forecasting, disease detection, pricing, inventory, recommendation engines, customer service and content generation. It could help small producers access analytics previously available only to larger firms. Risks include generic communication, data ownership concerns, biased recommendations and the erosion of human expertise as a trust signal. The best answer separates operational efficiency from brand differentiation and asks where wine's emotional, sensory and cultural value resists automation.",
+    "marking_points": [
+      "Identifies practical applications across the chain",
+      "Discusses data quality and ownership",
+      "Considers producer scale effects",
+      "Addresses consumer recommendation and retail",
+      "Balances efficiency with human trust"
+    ],
+    "common_traps": [
+      "Making vague claims about disruption",
+      "Ignoring data limitations",
+      "Forgetting wine's experiential nature"
+    ],
+    "follow_up_topics": [
+      "Precision viticulture tools",
+      "AI retail recommendations",
+      "Data governance"
+    ]
+  },
+  {
+    "id": "mw-027",
+    "category": "Tasting logic",
+    "difficulty": "MW-style",
+    "prompt": "Discuss how bottle age can complicate blind identification of variety and origin in premium white wines.",
+    "model_answer": "Bottle age can transform primary fruit into honeyed, nutty, waxy, petrol, mushroom or oxidative notes, reducing the clarity of youthful varietal markers. Acidity, phenolic texture, alcohol and residual sugar may become more important than fruit descriptors. Age can also reveal quality through integration and length, but storage variation and premature oxidation can mislead. A strong answer compares age trajectories for Riesling, Chardonnay, Chenin Blanc and Semillon and explains how to build a conclusion from structure and development.",
+    "marking_points": [
+      "Explains loss or transformation of primary aroma",
+      "Uses structure to support identification",
+      "Compares several varieties",
+      "Mentions storage and premature oxidation",
+      "Links maturity to quality assessment"
+    ],
+    "common_traps": [
+      "Calling all developed whites oxidised",
+      "Relying on petrol as proof of Riesling",
+      "Ignoring residual sugar"
+    ],
+    "follow_up_topics": [
+      "White wine ageing markers",
+      "Premature oxidation",
+      "Hunter Semillon"
+    ]
+  },
+  {
+    "id": "mw-028",
+    "category": "Research paper skills",
+    "difficulty": "MW-style",
+    "prompt": "Evaluate how a literature review should shape, rather than merely decorate, an MW research paper.",
+    "model_answer": "A literature review should identify what is already known, expose gaps, clarify definitions and justify the research question and method. It should not be a decorative summary of loosely related sources. Strong reviews compare evidence quality, highlight disagreement and create a framework for analysing primary data. They also prevent duplication and help interpret findings. The best answer shows how the literature review drives scope, hypotheses, methodology and discussion.",
+    "marking_points": [
+      "Explains gap identification",
+      "Links literature to research design",
+      "Assesses source quality",
+      "Defines key terms and frameworks",
+      "Shows how it informs discussion"
+    ],
+    "common_traps": [
+      "Writing an annotated bibliography",
+      "Using sources only to support a pre-decided view",
+      "Ignoring contradictory evidence"
+    ],
+    "follow_up_topics": [
+      "Academic source evaluation",
+      "Conceptual frameworks",
+      "Citation management"
+    ]
+  },
+  {
+    "id": "mw-029",
+    "category": "Viticulture",
+    "difficulty": "Exam pressure",
+    "prompt": "Critically examine the role of vineyard altitude in determining wine quality and style.",
+    "model_answer": "Altitude can increase diurnal range, preserve acidity, alter UV exposure, extend ripening and reduce disease pressure in some regions. It can also bring frost, hail, wind, access costs, slower ripening and vintage risk. Its effect depends on latitude, aspect, slope, soil, cloud cover and variety. The strongest answer resists altitude romanticism: altitude is valuable where it solves a ripening or balance problem, but not an independent guarantee of quality.",
+    "marking_points": [
+      "Explains temperature and diurnal effects",
+      "Mentions UV and phenolics",
+      "Considers frost, wind and access risks",
+      "Links altitude to latitude and aspect",
+      "Makes a qualified quality judgement"
+    ],
+    "common_traps": [
+      "Assuming higher is always better",
+      "Ignoring latitude",
+      "Forgetting economic costs"
+    ],
+    "follow_up_topics": [
+      "High-altitude viticulture",
+      "Diurnal range",
+      "Mountain vineyard economics"
+    ]
+  },
+  {
+    "id": "mw-030",
+    "category": "Vinification",
+    "difficulty": "MW-style",
+    "prompt": "Assess the importance of oxygen management during the production of premium rose wines.",
+    "model_answer": "Premium rose often depends on delicate colour, fresh aromatics and precise texture, making oxygen management central from pressing to bottling. Protective handling can preserve thiols and esters, while controlled oxygen may reduce later browning or instability depending on variety and style. Risks include colour loss, oxidation of phenolics, loss of freshness and reductive faults if protection is excessive. Decisions must consider grape variety, pressing regime, clarification, fermentation temperature, sulphur, closure and intended shelf life.",
+    "marking_points": [
+      "Links oxygen to colour and aroma stability",
+      "Discusses protective versus controlled exposure",
+      "Mentions pressing and clarification",
+      "Considers sulphur and closure",
+      "Relates management to shelf life and style"
+    ],
+    "common_traps": [
+      "Treating rose as simple white winemaking",
+      "Ignoring colour stability",
+      "Assuming zero oxygen is always best"
+    ],
+    "follow_up_topics": [
+      "Rose phenolics",
+      "Thiols in pink wines",
+      "Closure oxygen transmission"
+    ]
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "id": "mw-041",
+    "category": "Tasting logic",
+    "difficulty": "Warm-up",
+    "prompt": "Discuss how residual sugar can distort conclusions about acidity, body and origin in blind tasting.",
+    "model_answer": "Residual sugar can make acidity seem lower, increase body, soften bitterness and enhance fruit intensity. It may lead tasters to misread climate, ripeness or variety if they do not separate sweetness from fruitiness. In high-acid wines, sugar may be balanced and subtle; in lower-acid wines it can feel clumsy. A good answer uses structural checks, finish, viscosity and flavour persistence to identify sugar and avoid false conclusions about origin.",
+    "marking_points": [
+      "Explains sugar-acid balance",
+      "Distinguishes sweetness from fruitiness",
+      "Discusses body and finish",
+      "Mentions variety and regional examples",
+      "Shows how to avoid misidentification"
+    ],
+    "common_traps": [
+      "Missing low-level residual sugar",
+      "Equating sweetness with warm climate",
+      "Ignoring acidity on the finish"
+    ],
+    "follow_up_topics": [
+      "Sugar-acid balance",
+      "Off-dry Riesling",
+      "Blind tasting structure"
+    ]
+  },
+  {
+    "id": "mw-042",
+    "category": "Research paper skills",
+    "difficulty": "Exam pressure",
+    "prompt": "Assess how to present limitations in an MW research paper without weakening the argument.",
+    "model_answer": "Limitations should show methodological maturity, not apology. The paper should explain constraints such as sample size, respondent bias, data availability, geography and time frame, then state how the method still supports the research question. Good limitation sections distinguish what can be concluded from what cannot, and may recommend future research. The argument is strengthened when claims are proportionate to evidence and triangulation is used where possible.",
+    "marking_points": [
+      "Frames limitations as methodological transparency",
+      "Identifies common limitation types",
+      "Links limitations to claim scope",
+      "Mentions triangulation",
+      "Avoids overclaiming"
+    ],
+    "common_traps": [
+      "Hiding limitations",
+      "Listing weaknesses without implications",
+      "Letting limitations invalidate the whole paper"
+    ],
+    "follow_up_topics": [
+      "Discussion chapter structure",
+      "Research validity",
+      "Evidence-based conclusions"
+    ]
+  },
+  {
+    "id": "mw-043",
+    "category": "Viticulture",
+    "difficulty": "Warm-up",
+    "prompt": "Evaluate the main trade-offs in choosing an early-ripening grape variety for a warming region.",
+    "model_answer": "Early-ripening varieties may avoid late-season heat, drought or autumn rain and can preserve acidity in some climates. In warming regions they may instead accumulate sugar too rapidly, lose acid and require earlier harvest before flavour or phenolic maturity. They can also shift labour peaks and winery intake timing. The best answer weighs climate trajectory, market demand, wine style, disease pressure, water availability and the long-term cost of replanting.",
+    "marking_points": [
+      "Explains harvest timing and ripeness balance",
+      "Considers acid, sugar and phenolics",
+      "Mentions disease and labour timing",
+      "Addresses market suitability",
+      "Recognises long-term planting risk"
+    ],
+    "common_traps": [
+      "Assuming early ripening is always adaptive",
+      "Ignoring consumer demand",
+      "Forgetting winery capacity"
+    ],
+    "follow_up_topics": [
+      "Varietal adaptation",
+      "Phenolic maturity",
+      "Harvest logistics"
+    ]
+  },
+  {
+    "id": "mw-044",
+    "category": "Vinification",
+    "difficulty": "MW-style",
+    "prompt": "Discuss the role of malolactic conversion in balancing freshness, stability and style in premium red and white wines.",
+    "model_answer": "Malolactic conversion reduces malic acidity, increases microbial stability and can add buttery, creamy or textural notes depending on organism, timing and wine matrix. In reds it is generally expected for stability and softness, though timing affects aroma and integration. In whites it may be full, partial or blocked depending on desired freshness, pH, variety and market style. Strong answers compare technical necessity with stylistic choice and consider sulphur, temperature, pH and microbial risk.",
+    "marking_points": [
+      "Explains acid change and stability",
+      "Compares red and white applications",
+      "Discusses sensory impact",
+      "Mentions pH, sulphur and timing",
+      "Recognises partial or blocked options"
+    ],
+    "common_traps": [
+      "Saying MLF only creates butter",
+      "Ignoring microbial stability",
+      "Assuming all whites should avoid MLF"
+    ],
+    "follow_up_topics": [
+      "Oenococcus oeni",
+      "Diacetyl management",
+      "Partial malolactic conversion"
+    ]
+  },
+  {
+    "id": "mw-045",
+    "category": "Wine business",
+    "difficulty": "MW-style",
+    "prompt": "Evaluate whether regional generic bodies should prioritise education, promotion or regulation when seeking premium recognition.",
+    "model_answer": "Education builds trade and consumer understanding, promotion creates visibility and demand, while regulation can protect standards and clarify identity. Premium recognition usually needs all three, but priorities depend on region maturity. Emerging regions may first need education and coherent messaging; established regions may need regulation to protect reputation or promotion to defend market share. The strongest answer considers funding, producer alignment, export markets, appellation complexity and measurable outcomes.",
+    "marking_points": [
+      "Defines education, promotion and regulation roles",
+      "Links priority to region maturity",
+      "Discusses producer alignment and funding",
+      "Considers export market needs",
+      "Offers measurable success criteria"
+    ],
+    "common_traps": [
+      "Choosing one function in isolation",
+      "Ignoring producer disagreement",
+      "Assuming stricter regulation always helps"
+    ],
+    "follow_up_topics": [
+      "Generic wine bodies",
+      "Appellation reform",
+      "Regional marketing"
+    ]
+  },
+  {
+    "id": "mw-046",
+    "category": "Global wine regions",
+    "difficulty": "Warm-up",
+    "prompt": "Compare the drivers of quality in Marlborough Sauvignon Blanc and Sancerre.",
+    "model_answer": "Marlborough quality is driven by intense aromatics, cool nights, strong sunlight, canopy control, rapid protective winemaking and subregional diversity, with styles ranging from pungent to textured. Sancerre relies on Loire climate, limestone and flint-associated sites, restrained fruit, acidity, texture and appellation identity. Both depend on yield control and picking decisions. A strong answer avoids caricature and compares climate, soils, winemaking, market expectations and premium style evolution.",
+    "marking_points": [
+      "Compares climate and aromatic profile",
+      "Discusses protective winemaking and texture",
+      "Mentions subregional or site diversity",
+      "Addresses market expectations",
+      "Avoids stereotypes"
+    ],
+    "common_traps": [
+      "Calling all Marlborough simple",
+      "Attributing Sancerre only to soil",
+      "Ignoring producer style"
+    ],
+    "follow_up_topics": [
+      "Marlborough subregions",
+      "Sancerre soils",
+      "Sauvignon thiols"
+    ]
+  },
+  {
+    "id": "mw-047",
+    "category": "Current issues",
+    "difficulty": "MW-style",
+    "prompt": "Assess how changing patterns of wine consumption among younger adults should influence premium wine communication.",
+    "model_answer": "Younger adults in many markets drink less frequently, value authenticity, moderation, experiences, sustainability and transparency, and discover products through digital and social channels. Premium communication should focus on occasion, story, food, place, farming and emotional relevance rather than inherited prestige alone. However, generalisations are risky across income, culture and geography. Strong answers discuss accessibility without dumbing down, price barriers, format innovation and the need to preserve credibility.",
+    "marking_points": [
+      "Addresses moderation and occasion change",
+      "Discusses digital discovery",
+      "Mentions sustainability and authenticity",
+      "Considers price and accessibility",
+      "Avoids stereotyping a whole generation"
+    ],
+    "common_traps": [
+      "Assuming young consumers reject premium wine",
+      "Using vague social media advice",
+      "Ignoring cultural and income differences"
+    ],
+    "follow_up_topics": [
+      "Gen Z beverage trends",
+      "Premium wine storytelling",
+      "No/low alcohol competition"
+    ]
+  },
+  {
+    "id": "mw-048",
+    "category": "Tasting logic",
+    "difficulty": "Exam pressure",
+    "prompt": "Critically examine how oak can mislead blind tasters when assessing variety, quality and origin.",
+    "model_answer": "Oak can add vanilla, spice, toast, smoke, cedar, sweetness and texture that may mask fruit character or suggest varieties and regions associated with barrel use. New oak can inflate perceived quality through polish, while poor integration can reveal imbalance. Oak origin, age, toast, size and time all alter effect. A strong tasting answer separates oak-derived characters from fruit, acid, tannin and alcohol, and judges whether oak supports or dominates the wine.",
+    "marking_points": [
+      "Identifies oak-derived aromas and textures",
+      "Explains barrel variables",
+      "Discusses masking of variety and origin",
+      "Links integration to quality",
+      "Uses structure to cross-check conclusions"
+    ],
+    "common_traps": [
+      "Assuming expensive oak means high quality",
+      "Confusing toast with bottle age",
+      "Letting oak override structural evidence"
+    ],
+    "follow_up_topics": [
+      "Oak species and toast",
+      "Barrel size",
+      "Oak integration in tasting"
+    ]
+  },
+  {
+    "id": "mw-049",
+    "category": "Research paper skills",
+    "difficulty": "MW-style",
+    "prompt": "Evaluate the role of charts and tables in an MW research paper.",
+    "model_answer": "Charts and tables should clarify evidence, reveal patterns and support analysis, not decorate the paper or duplicate prose. Good visuals are simple, labelled, sourced and directly discussed in the text. Tables suit precise comparisons or respondent profiles; charts suit trends, proportions or relationships. Poor visuals can mislead through inappropriate scales, clutter or unrepresentative data. Strong answers emphasise that every visual should answer part of the research question.",
+    "marking_points": [
+      "Distinguishes charts and tables",
+      "Links visuals to analysis",
+      "Mentions labelling, sourcing and scale",
+      "Avoids duplication with prose",
+      "Discusses clarity and relevance"
+    ],
+    "common_traps": [
+      "Adding charts because they look academic",
+      "Not explaining visuals in the text",
+      "Using misleading axes or categories"
+    ],
+    "follow_up_topics": [
+      "Data visualisation",
+      "Research paper formatting",
+      "Evidence presentation"
+    ]
+  },
+  {
+    "id": "mw-050",
+    "category": "Viticulture",
+    "difficulty": "MW-style",
+    "prompt": "Assess whether machine harvesting can be compatible with premium wine production.",
+    "model_answer": "Machine harvesting can be compatible with premium wine when fruit is healthy, vineyard design suits machinery, harvest timing is precise and winery intake is rapid. It offers speed, night harvesting, labour resilience and cost control. Risks include berry damage, MOG, oxidation, loss of whole-bunch options and unsuitability for steep or fragile sites. The answer should compare variety, wine style, terrain, sorting technology, labour availability and climate pressure. Premium quality depends on management, not hand-picking ideology.",
+    "marking_points": [
+      "Discusses speed and night harvesting",
+      "Addresses fruit damage and MOG",
+      "Considers vineyard terrain and design",
+      "Links to wine style and whole-bunch needs",
+      "Avoids assuming hand harvest is always superior"
+    ],
+    "common_traps": [
+      "Treating machine harvesting as entry-level only",
+      "Ignoring labour shortages",
+      "Forgetting sorting and rapid processing"
+    ],
+    "follow_up_topics": [
+      "Optical sorting",
+      "Night harvesting",
+      "Harvest labour economics"
+    ]
+  }
+]

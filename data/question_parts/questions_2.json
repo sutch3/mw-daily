@@ -1,0 +1,242 @@
+[
+  {
+    "id": "mw-011",
+    "category": "Global wine regions",
+    "difficulty": "Exam pressure",
+    "prompt": "Critically compare the challenges and opportunities for premium Riesling in Germany, Austria and Australia.",
+    "model_answer": "Germany offers historic reputation, diverse sweetness levels and strong vineyard identities, but can face consumer confusion around labelling and sweetness. Austria has built a dry, gastronomic image with precise regional structures, though production volumes are limited. Australia, especially Clare and Eden Valley, offers dry, lime-driven styles with strong ageing potential but must overcome narrower global associations with other varieties. A high-quality answer compares climate, style, labelling, export identity, price ladder and food culture rather than merely listing regions.",
+    "marking_points": [
+      "Compares dry and sweet market positioning",
+      "Mentions labelling and regional identity",
+      "Explains climate and style differences",
+      "Considers export scale and consumer perception",
+      "Addresses ageing and premium pricing"
+    ],
+    "common_traps": [
+      "Treating Riesling as one style",
+      "Ignoring sweetness communication",
+      "Overlooking Australian premium examples"
+    ],
+    "follow_up_topics": [
+      "VDP classification",
+      "Wachau categories",
+      "Clare Valley Riesling"
+    ]
+  },
+  {
+    "id": "mw-012",
+    "category": "Current issues",
+    "difficulty": "Warm-up",
+    "prompt": "Evaluate whether alcohol reduction is a quality opportunity or a commercial compromise for table wine producers.",
+    "model_answer": "Alcohol reduction can meet consumer demand for moderation, improve balance in warm vintages and open new occasions. It can also damage texture, aroma integration and legal category expectations if handled crudely. Vineyard decisions, earlier picking, yeast selection, membrane technologies and blending all offer routes with different quality consequences. The strongest answer distinguishes naturally balanced lower-alcohol wines from dealcoholised or partially dealcoholised products and considers market segment, labelling and taste acceptance.",
+    "marking_points": [
+      "Distinguishes viticultural and technical routes",
+      "Discusses sensory impact of alcohol",
+      "Considers moderation trends and taxation",
+      "Addresses legal labelling categories",
+      "Makes a segment-specific judgement"
+    ],
+    "common_traps": [
+      "Assuming low alcohol means low quality",
+      "Ignoring body and aroma effects",
+      "Not defining the level of reduction"
+    ],
+    "follow_up_topics": [
+      "Spinning cone technology",
+      "Low-alcohol wine regulation",
+      "Consumer moderation trends"
+    ]
+  },
+  {
+    "id": "mw-013",
+    "category": "Tasting logic",
+    "difficulty": "Exam pressure",
+    "prompt": "Discuss how you would distinguish traditional-method sparkling wines from Champagne, Franciacorta and England in a blind tasting flight.",
+    "model_answer": "The taster should combine acidity, autolysis, fruit ripeness, phenolic texture, dosage impression and likely ageing. Champagne often shows high acidity, chalky tension and complex autolysis, though style varies widely. Franciacorta may show riper orchard fruit, softer acidity and a broader palate, often from a warmer climate and different market tradition. English sparkling wine can show very high acidity, green apple or citrus fruit and increasingly serious lees complexity. Conclusions must remain probabilistic because producer style, dosage and age can easily mislead.",
+    "marking_points": [
+      "Uses structure as well as flavour",
+      "Compares climate influence on ripeness and acidity",
+      "Mentions lees ageing, dosage and bottle age",
+      "Recognises producer variation",
+      "Frames conclusion with uncertainty"
+    ],
+    "common_traps": [
+      "Assuming autolysis proves Champagne",
+      "Ignoring dosage",
+      "Overgeneralising English sparkling wine as simple"
+    ],
+    "follow_up_topics": [
+      "Traditional method production",
+      "Base wine acidity",
+      "Sparkling wine blind tasting"
+    ]
+  },
+  {
+    "id": "mw-014",
+    "category": "Research paper skills",
+    "difficulty": "MW-style",
+    "prompt": "Assess the strengths and weaknesses of using interviews as primary research for an MW research paper.",
+    "model_answer": "Interviews can generate rich, contextual evidence from producers, buyers, consumers or technical experts, especially when exploring behaviour or emerging issues. They are flexible and can reveal themes not anticipated by the researcher. Weaknesses include small sample size, bias, poor comparability, leading questions and difficulty generalising. Strong methodology requires a clear sampling rationale, consistent interview guide, ethical handling of responses and transparent coding. Interviews are strongest when triangulated with literature, sales data, surveys or technical evidence.",
+    "marking_points": [
+      "Explains qualitative value",
+      "Discusses sampling and bias",
+      "Mentions interview guide and coding",
+      "Considers ethics and anonymity",
+      "Recommends triangulation"
+    ],
+    "common_traps": [
+      "Treating anecdotes as proof",
+      "Ignoring respondent selection",
+      "Failing to link method to research question"
+    ],
+    "follow_up_topics": [
+      "Qualitative coding",
+      "Semi-structured interviews",
+      "Research ethics"
+    ]
+  },
+  {
+    "id": "mw-015",
+    "category": "Viticulture",
+    "difficulty": "MW-style",
+    "prompt": "Compare organic, biodynamic and regenerative viticulture as quality and marketing propositions.",
+    "model_answer": "Organic viticulture is clearly regulated in many markets and restricts synthetic inputs, offering consumer recognition and environmental claims. Biodynamic viticulture adds a holistic philosophy, preparations and certification, often carrying strong premium storytelling but also scepticism. Regenerative viticulture focuses on soil health, biodiversity, carbon and ecosystem resilience, but definitions and certification are still evolving. Quality effects are indirect and depend on site management rather than labels alone. The best answer separates agronomic practice, evidence, certification, cost, risk and consumer meaning.",
+    "marking_points": [
+      "Defines each approach accurately",
+      "Compares certification and consumer recognition",
+      "Addresses disease-pressure challenges",
+      "Avoids claiming automatic quality improvement",
+      "Links soil and biodiversity to resilience"
+    ],
+    "common_traps": [
+      "Conflating the three systems",
+      "Making unsupported quality claims",
+      "Ignoring regional disease pressure"
+    ],
+    "follow_up_topics": [
+      "Organic certification",
+      "Biodynamic preparations",
+      "Regenerative agriculture metrics"
+    ]
+  },
+  {
+    "id": "mw-016",
+    "category": "Vinification",
+    "difficulty": "Warm-up",
+    "prompt": "Evaluate the role of lees ageing in shaping the quality and style of premium Chardonnay.",
+    "model_answer": "Lees ageing can add texture, savoury complexity, mouthfeel and protection against oxidation through yeast autolysis and reductive buffering. Batonnage can increase richness and perceived body, though it may obscure site expression or create heaviness if overused. The impact depends on lees quality, time, vessel, sulphur regime, oxygen exposure and base wine acidity. A good answer compares restrained, mineral styles with richer barrel-fermented examples and shows that lees are a precision tool, not a quality guarantee.",
+    "marking_points": [
+      "Explains autolysis and texture",
+      "Discusses batonnage",
+      "Links lees to oxidation and reduction",
+      "Considers vessel and time",
+      "Relates technique to style goal"
+    ],
+    "common_traps": [
+      "Equating lees ageing only with bread flavours",
+      "Ignoring reduction risk",
+      "Forgetting base wine balance"
+    ],
+    "follow_up_topics": [
+      "Yeast autolysis",
+      "Barrel fermentation",
+      "Premature oxidation"
+    ]
+  },
+  {
+    "id": "mw-017",
+    "category": "Wine business",
+    "difficulty": "Exam pressure",
+    "prompt": "Critically examine how premium wine brands can justify price increases during periods of economic pressure.",
+    "model_answer": "Price increases can be justified by scarcity, rising production costs, improved quality, stronger critical reputation, brand equity and inflation. However, consumers and trade buyers may resist if value perception is weak or substitutes are available. Premium brands need disciplined allocation, transparent communication, channel consistency and evidence of distinctiveness. Overreliance on price as a prestige signal can damage loyalty. The strongest answers compare fine wine, luxury gifting, restaurant listings and everyday premium segments, where elasticity differs.",
+    "marking_points": [
+      "Addresses cost, scarcity and brand equity",
+      "Considers price elasticity by segment",
+      "Discusses channel and allocation strategy",
+      "Mentions communication and perceived value",
+      "Identifies risk of alienating loyal buyers"
+    ],
+    "common_traps": [
+      "Assuming premium consumers are price-insensitive",
+      "Ignoring distributor and retailer margins",
+      "Treating inflation as sufficient explanation"
+    ],
+    "follow_up_topics": [
+      "Luxury pricing",
+      "Wine price elasticity",
+      "Allocation models"
+    ]
+  },
+  {
+    "id": "mw-018",
+    "category": "Global wine regions",
+    "difficulty": "MW-style",
+    "prompt": "Assess the prospects for premium Chenin Blanc in South Africa compared with the Loire Valley.",
+    "model_answer": "The Loire offers benchmark appellations, acidity, ageability and a spectrum from dry to sweet, but can suffer from fragmented consumer understanding. South Africa has old vines, diverse climates, energetic producers and strong value-to-quality narratives, especially in dry textured styles. Challenges include price ceilings, export perception and communicating regional diversity. The best answer compares terroir, vine age, stylistic range, market identity, critical attention and the ability to convert specialist enthusiasm into broader premium demand.",
+    "marking_points": [
+      "Compares old-vine assets and appellation identity",
+      "Explains stylistic diversity",
+      "Addresses market perception and price ceilings",
+      "Mentions acidity, texture and ageability",
+      "Offers a view on premium potential"
+    ],
+    "common_traps": [
+      "Reducing Loire to sweet wines",
+      "Ignoring South African regional diversity",
+      "Assuming critic praise equals mainstream demand"
+    ],
+    "follow_up_topics": [
+      "Swartland producers",
+      "Vouvray and Savennieres",
+      "Old Vine Project"
+    ]
+  },
+  {
+    "id": "mw-019",
+    "category": "Current issues",
+    "difficulty": "Exam pressure",
+    "prompt": "Critically examine whether certification schemes help or hinder consumer understanding of sustainable wine.",
+    "model_answer": "Certification can provide trust, third-party verification and a framework for producers to improve practice. It can also create logo fatigue, inconsistent standards and confusion between organic, biodynamic, sustainable and regenerative claims. For consumers, simple and credible signals help; too many overlapping schemes can weaken communication. The answer should consider producer cost, market recognition, retailer requirements, greenwashing risk and whether certification measures meaningful outcomes or just practices.",
+    "marking_points": [
+      "Compares trust benefits with complexity",
+      "Distinguishes different sustainability claims",
+      "Addresses cost and access for producers",
+      "Considers retailer and export market pressure",
+      "Mentions greenwashing and outcome metrics"
+    ],
+    "common_traps": [
+      "Assuming certification is automatically meaningful",
+      "Ignoring consumer recognition",
+      "Forgetting small-producer burden"
+    ],
+    "follow_up_topics": [
+      "Sustainability certification schemes",
+      "Greenwashing regulation",
+      "Lifecycle assessment"
+    ]
+  },
+  {
+    "id": "mw-020",
+    "category": "Tasting logic",
+    "difficulty": "Warm-up",
+    "prompt": "Evaluate the tasting evidence that might lead you to identify a wine as high-altitude Malbec rather than warm lowland Malbec.",
+    "model_answer": "High-altitude Malbec may show deeper colour, vivid acidity, floral lift, fresher black or blue fruit, firmer tannins and less jammy alcohol warmth due to diurnal range and UV effects. Warm lowland examples may show softer acidity, riper fruit, fuller alcohol and sometimes baked or plush characters. Oak regime, yield, extraction and picking date complicate the distinction. A strong answer uses structure, fruit condition and balance rather than relying only on intensity.",
+    "marking_points": [
+      "Links altitude to diurnal range and UV exposure",
+      "Compares acidity, alcohol and fruit profile",
+      "Mentions tannin and colour",
+      "Accounts for winemaking variables",
+      "Avoids assuming altitude equals quality"
+    ],
+    "common_traps": [
+      "Using colour alone",
+      "Ignoring oak and extraction",
+      "Equating ripe with lowland automatically"
+    ],
+    "follow_up_topics": [
+      "Mendoza subregions",
+      "Altitude effects",
+      "Malbec phenolics"
+    ]
+  }
+]

@@ -7,9 +7,18 @@ from typing import Any
 
 
 QUESTION_PATH = Path(__file__).resolve().parent.parent / "data" / "questions.json"
+QUESTION_PARTS_PATH = Path(__file__).resolve().parent.parent / "data" / "question_parts"
 
 
 def load_questions() -> list[dict[str, Any]]:
+    if QUESTION_PARTS_PATH.exists():
+        questions: list[dict[str, Any]] = []
+        for path in sorted(QUESTION_PARTS_PATH.glob("questions_*.json")):
+            with path.open("r", encoding="utf-8") as file:
+                questions.extend(json.load(file))
+        if questions:
+            return questions
+
     with QUESTION_PATH.open("r", encoding="utf-8") as file:
         return json.load(file)
 

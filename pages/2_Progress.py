@@ -73,8 +73,11 @@ if attempts:
                 if attempt.get("question_quality")
                 else "-",
             )
-            st.markdown("**Sara's answer**")
-            st.write(attempt["answer"])
+            if attempt.get("answer"):
+                st.markdown("**Sara's answer**")
+                st.write(attempt["answer"])
+            else:
+                st.info("Sara skipped this question after rating it.")
             if attempt.get("question_feedback"):
                 st.markdown("**Question feedback**")
                 st.write(attempt["question_feedback"])

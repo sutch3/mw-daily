@@ -223,13 +223,6 @@ with timer_columns[2]:
 with timer_columns[3]:
     st.metric("Time taken", format_duration(elapsed_seconds))
 
-answer = st.text_area(
-    "Sara's answer",
-    key=answer_key,
-    height=260,
-    placeholder="Write a structured MW-style answer: define the issue, compare causes or options, weigh trade-offs, then reach a judgement.",
-)
-
 st.subheader("Question feedback")
 quality = st.slider(
     "Question usefulness",
@@ -246,10 +239,17 @@ question_feedback = st.text_area(
     placeholder="Optional: too easy, too broad, great topic, needs more tasting logic, not exam-like enough...",
 )
 
+answer = st.text_area(
+    "Sara's answer",
+    key=answer_key,
+    height=260,
+    placeholder="Write a structured MW-style answer: define the issue, compare causes or options, weigh trade-offs, then reach a judgement.",
+)
+
 save_col, reveal_col = st.columns([0.28, 0.72], vertical_alignment="center")
 with save_col:
-    if st.button("Save answer", type="primary", use_container_width=True):
-        if answer.strip():
+    if st.button("Save", type="primary", use_container_width=True):
+        if answer.strip() or question_feedback.strip():
             save_attempt(
                 {
                     "question_id": active_question["id"],
@@ -263,7 +263,7 @@ with save_col:
             )
             st.success("Saved.")
         else:
-            st.warning("Write an answer before saving.")
+            st.warning("Write an answer or add question feedback before saving.")
 
 with reveal_col:
     if st.button("Reveal model answer", use_container_width=True):

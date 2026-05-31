@@ -167,6 +167,26 @@ answer_key = f"answer_{active_question['id']}_{mode}"
 reveal_key = f"revealed_{active_question['id']}_{mode}"
 timer_key = f"timer_{active_question['id']}_{mode}"
 
+
+def save_current_attempt(status: str, answer_text: str) -> bool:
+    try:
+        save_attempt(
+            {
+                "question_id": active_question["id"],
+                "study_date": date.today().isoformat(),
+                "mode": mode,
+                "status": status,
+                "answer": answer_text.strip(),
+                "time_seconds": elapsed_seconds,
+                "question_quality": quality,
+                "question_feedback": question_feedback.strip(),
+            }
+        )
+    except requests.RequestException:
+        st.error("I couldn't save to GitHub just now. Try again in a minute.")
+        return False
+    return True
+
 with st.container(border=True):
     st.subheader("Response workspace")
     st.markdown(
@@ -200,28 +220,19 @@ with st.container(border=True):
         placeholder="Write a structured MW-style answer: define the issue, compare causes or options, weigh trade-offs, then reach a judgement.",
     )
 
-    save_col, reveal_col = st.columns([0.28, 0.72], vertical_alignment="center")
+    save_col, skip_col, reveal_col = st.columns([0.24, 0.24, 0.52], vertical_alignment="center")
     with save_col:
         if st.button("Save", type="primary", use_container_width=True):
             if answer.strip() or question_feedback.strip():
-                try:
-                    save_attempt(
-                        {
-                            "question_id": active_question["id"],
-                            "study_date": date.today().isoformat(),
-                            "mode": mode,
-                            "answer": answer.strip(),
-                            "time_seconds": elapsed_seconds,
-                            "question_quality": quality,
-                            "question_feedback": question_feedback.strip(),
-                        }
-                    )
-                except requests.RequestException:
-                    st.error("I couldn't save to GitHub just now. Try again in a minute.")
-                else:
+                if save_current_attempt("answered", answer):
                     st.success("Saved.")
             else:
                 st.warning("Write an answer or add question feedback before saving.")
+
+    with skip_col:
+        if st.button("Skip question", use_container_width=True):
+            if save_current_attempt("skipped", ""):
+                st.success("Skipped and saved to history.")
 
     with reveal_col:
         if st.button("Show model answer", use_container_width=True):

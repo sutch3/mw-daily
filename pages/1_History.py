@@ -49,9 +49,17 @@ if st.button("Back to today's question", type="primary", width="content"):
 questions = load_questions()
 attempts = load_attempts()
 lookup = question_lookup(questions)
+answered_attempts = [
+    attempt for attempt in attempts if attempt.get("status", "answered") != "skipped"
+]
+skipped_attempts = [
+    attempt for attempt in attempts if attempt.get("status") == "skipped"
+]
 
-answered_count = len(attempts)
-timed_attempts = [attempt for attempt in attempts if attempt.get("time_seconds") is not None]
+answered_count = len(answered_attempts)
+timed_attempts = [
+    attempt for attempt in answered_attempts if attempt.get("time_seconds") is not None
+]
 rated_attempts = [attempt for attempt in attempts if attempt.get("question_quality")]
 average_time = (
     sum(int(attempt["time_seconds"]) for attempt in timed_attempts) / len(timed_attempts)
@@ -64,11 +72,12 @@ average_quality = (
     else None
 )
 
-metric_columns = st.columns(4)
+metric_columns = st.columns(5)
 metric_columns[0].metric("Questions answered", answered_count)
-metric_columns[1].metric("Question bank", len(questions))
-metric_columns[2].metric("Average time", format_duration(average_time))
-metric_columns[3].metric(
+metric_columns[1].metric("Questions skipped", len(skipped_attempts))
+metric_columns[2].metric("Question bank", len(questions))
+metric_columns[3].metric("Average time", format_duration(average_time))
+metric_columns[4].metric(
     "Question usefulness",
     f"{average_quality:.1f}/5" if average_quality is not None else "-",
 )
@@ -76,9 +85,9 @@ metric_columns[3].metric(
 st.divider()
 
 st.subheader("Category coverage")
-counts = category_counts(attempts, questions)
+counts = category_counts(answered_attempts, questions)
 categories = sorted({question["category"] for question in questions})
-if attempts:
+if answered_attempts:
     st.bar_chart({category: counts.get(category, 0) for category in categories})
 else:
     st.info("No saved answers yet.")
@@ -90,9 +99,11 @@ if attempts:
     for attempt in reversed(attempts):
         question = lookup.get(attempt["question_id"], {})
         time_taken = format_duration(attempt.get("time_seconds"))
+        status = attempt.get("status", "answered")
+        status_label = "Skipped" if status == "skipped" else "Answered"
         title = (
             f"{attempt['study_date']} · {question.get('category', 'Unknown')} · "
-            f"{time_taken}"
+            f"{status_label} · {time_taken}"
         )
         with st.expander(title):
             st.write(question.get("prompt", "Question unavailable."))
@@ -106,11 +117,13 @@ if attempts:
                 if attempt.get("question_quality")
                 else "-",
             )
-            if attempt.get("answer"):
+            if status == "skipped":
+                st.info("I skipped this question.")
+            elif attempt.get("answer"):
                 st.markdown("**My answer**")
                 st.write(attempt["answer"])
             else:
-                st.info("I skipped this question after rating it.")
+                st.info("No answer saved for this question.")
             if attempt.get("question_feedback"):
                 st.markdown("**Question feedback**")
                 st.write(attempt["question_feedback"])

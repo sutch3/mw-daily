@@ -221,6 +221,25 @@ def apply_global_styles() -> None:
             text-transform: uppercase;
         }
 
+        [data-testid="stSegmentedControl"] {
+            margin-top: 0.15rem;
+        }
+
+        [data-testid="stSegmentedControl"] button {
+            border: 1px solid var(--line) !important;
+            border-radius: 999px !important;
+            min-height: 2.55rem;
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+
+        [data-testid="stSegmentedControl"] button[aria-pressed="true"],
+        [data-testid="stSegmentedControl"] button[aria-selected="true"] {
+            background: var(--forest) !important;
+            border-color: var(--forest) !important;
+            color: #FFFFFF !important;
+        }
+
         div.stButton > button {
             border-radius: 6px;
             border: 1px solid var(--forest);

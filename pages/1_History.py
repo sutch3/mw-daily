@@ -9,7 +9,7 @@ from mw_daily.time_format import format_duration
 from mw_daily.ui import apply_global_styles
 
 
-st.set_page_config(page_title="MW Daily Progress", page_icon="MW", layout="wide")
+st.set_page_config(page_title="MW Daily History", page_icon="MW", layout="wide")
 apply_global_styles()
 
 st.markdown(
@@ -18,9 +18,9 @@ st.markdown(
         <div class="hero-row">
             <div class="brand-mark">S</div>
             <div>
-                <div class="eyebrow">Sara's study record</div>
-                <h1 class="hero-title">Progress</h1>
-                <p class="lede">Coverage, time taken, question feedback, and the answer history she is building.</p>
+                <div class="eyebrow">My study record</div>
+                <h1 class="hero-title">History</h1>
+                <p class="lede">Coverage, time taken, question feedback, and the answer history I am building.</p>
             </div>
         </div>
         <div class="vine-line" aria-hidden="true">
@@ -77,7 +77,7 @@ else:
     st.info("No saved answers yet.")
 
 st.divider()
-st.subheader("Answer history")
+st.subheader("My answer history")
 
 if attempts:
     for attempt in reversed(attempts):
@@ -100,10 +100,10 @@ if attempts:
                 else "-",
             )
             if attempt.get("answer"):
-                st.markdown("**Sara's answer**")
+                st.markdown("**My answer**")
                 st.write(attempt["answer"])
             else:
-                st.info("Sara skipped this question after rating it.")
+                st.info("I skipped this question after rating it.")
             if attempt.get("question_feedback"):
                 st.markdown("**Question feedback**")
                 st.write(attempt["question_feedback"])

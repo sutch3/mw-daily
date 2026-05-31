@@ -74,9 +74,9 @@ st.markdown(
         <div class="hero-row">
             <div class="brand-mark">S</div>
             <div>
-                <div class="eyebrow">For Sara's Master of Wine preparation</div>
-                <h1 class="hero-title">Sara's MW Daily</h1>
-                <p class="lede">A quiet daily study ritual: one serious question, space to think, and guidance when she wants it.</p>
+                <div class="eyebrow">My Master of Wine preparation</div>
+                <h1 class="hero-title">My MW Daily</h1>
+                <p class="lede">A quiet daily study ritual: one serious question, space to think, and guidance when I want it.</p>
             </div>
         </div>
         <div class="vine-line" aria-hidden="true">
@@ -96,17 +96,35 @@ st.markdown(
 )
 
 with st.container(border=True):
-    st.markdown('<div class="desk-label">Sara\'s question desk</div>', unsafe_allow_html=True)
-    setup_left, setup_right = st.columns([0.56, 0.44], vertical_alignment="bottom")
+    st.markdown('<div class="desk-label">My question desk</div>', unsafe_allow_html=True)
+    setup_left, setup_right = st.columns([0.58, 0.42], vertical_alignment="bottom")
 
     with setup_left:
-        mode = st.radio(
-            "Mode",
-            ["Daily question", "Random question"],
-            horizontal=True,
-        )
+        st.markdown("Mode")
+        if "question_mode" not in st.session_state:
+            st.session_state.question_mode = "Daily question"
+        mode_columns = st.columns(2)
+        with mode_columns[0]:
+            if st.button(
+                "Daily question",
+                type="primary" if st.session_state.question_mode == "Daily question" else "secondary",
+                use_container_width=True,
+            ):
+                st.session_state.question_mode = "Daily question"
+                st.rerun()
+        with mode_columns[1]:
+            if st.button(
+                "Random question",
+                type="primary" if st.session_state.question_mode == "Random question" else "secondary",
+                use_container_width=True,
+            ):
+                st.session_state.question_mode = "Random question"
+                st.rerun()
+        mode = st.session_state.question_mode
 
     with setup_right:
+        if st.button("View my history", use_container_width=True):
+            st.switch_page("pages/1_History.py")
         if mode == "Random question":
             if "random_question_id" not in st.session_state:
                 st.session_state.random_question_id = random.choice(questions)["id"]
@@ -130,7 +148,7 @@ with st.container(border=True):
     feedback_key = f"feedback_{active_question['id']}_{mode}"
 
     with feedback_left:
-        st.markdown("**Is this worth Sara's time?**")
+        st.markdown("**Is this worth my time?**")
         quality = st.slider(
             "Question usefulness",
             min_value=1,
@@ -156,7 +174,7 @@ timer_key = f"timer_{active_question['id']}_{mode}"
 with st.container(border=True):
     st.subheader("Response workspace")
     st.markdown(
-        '<p class="workspace-label">Time the attempt, write the answer, or open the model answer as a study aid.</p>',
+        '<p class="workspace-label">Time my attempt, write my answer, or open the model answer as a study aid.</p>',
         unsafe_allow_html=True,
     )
     timer_running, elapsed_seconds = timer_state(timer_key)
@@ -180,7 +198,7 @@ with st.container(border=True):
         st.metric("Time taken", format_duration(elapsed_seconds))
 
     answer = st.text_area(
-        "Sara's answer",
+        "My answer",
         key=answer_key,
         height=260,
         placeholder="Write a structured MW-style answer: define the issue, compare causes or options, weigh trade-offs, then reach a judgement.",

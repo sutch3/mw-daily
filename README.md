@@ -1,6 +1,6 @@
 # MW Daily
 
-MW Daily is a small Streamlit app for Master of Wine exam preparation. It gives Sara one analytical MW-style question per day, lets her write and save an answer, reveals marking guidance, and tracks weak areas over time.
+MW Daily is a small Streamlit app for Master of Wine exam preparation. It gives Sara one analytical MW-style question per day, lets her write and save an answer, reveals marking guidance, and keeps a history of answers and time spent.
 
 ## Features
 
@@ -12,7 +12,7 @@ MW Daily is a small Streamlit app for Master of Wine exam preparation. It gives 
 - Saved written answers
 - Question usefulness rating and optional feedback notes
 - Model answer, marking points, common traps, and follow-up reading topics
-- Progress page with answered questions, category coverage, time taken, and answer history
+- History page with answered questions, category coverage, time taken, and answer history
 
 ## Run locally
 
@@ -82,7 +82,7 @@ Make changes locally, commit them, and push to GitHub. Streamlit Community Cloud
 
 ```text
 app.py                 # Daily/random question page
-pages/2_Progress.py    # Progress dashboard
+pages/1_History.py     # History dashboard
 mw_daily/questions.py   # Question loading and daily selection
 mw_daily/storage.py     # Answer persistence
 mw_daily/analytics.py   # Progress and weak-area calculations

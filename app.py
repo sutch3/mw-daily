@@ -4,6 +4,7 @@ import random
 import time
 from datetime import date
 
+import requests
 import streamlit as st
 
 from mw_daily.questions import question_for_day, load_questions
@@ -201,18 +202,22 @@ with st.container(border=True):
     with save_col:
         if st.button("Save", type="primary", use_container_width=True):
             if answer.strip() or question_feedback.strip():
-                save_attempt(
-                    {
-                        "question_id": active_question["id"],
-                        "study_date": date.today().isoformat(),
-                        "mode": mode,
-                        "answer": answer.strip(),
-                        "time_seconds": elapsed_seconds,
-                        "question_quality": quality,
-                        "question_feedback": question_feedback.strip(),
-                    }
-                )
-                st.success("Saved.")
+                try:
+                    save_attempt(
+                        {
+                            "question_id": active_question["id"],
+                            "study_date": date.today().isoformat(),
+                            "mode": mode,
+                            "answer": answer.strip(),
+                            "time_seconds": elapsed_seconds,
+                            "question_quality": quality,
+                            "question_feedback": question_feedback.strip(),
+                        }
+                    )
+                except requests.RequestException:
+                    st.error("I couldn't save to GitHub just now. Try again in a minute.")
+                else:
+                    st.success("Saved.")
             else:
                 st.warning("Write an answer or add question feedback before saving.")
 

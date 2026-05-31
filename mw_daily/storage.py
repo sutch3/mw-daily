@@ -39,16 +39,35 @@ def github_headers(token: str) -> dict[str, str]:
     }
 
 
-def load_attempts_from_github(config: dict[str, str]) -> list[dict[str, Any]]:
-    response = requests.get(
-        f"https://api.github.com/repos/{config['repo']}/contents/{config['path']}",
-        headers=github_headers(config["token"]),
-        params={"ref": config["branch"]},
-        timeout=10,
+def show_storage_warning() -> None:
+    if st.session_state.get("_mw_daily_storage_warning_shown"):
+        return
+    st.session_state["_mw_daily_storage_warning_shown"] = True
+    st.warning(
+        "I couldn't load my saved history from GitHub just now. "
+        "The app is still available, but history may be incomplete."
     )
+
+
+def load_attempts_from_github(config: dict[str, str]) -> list[dict[str, Any]]:
+    try:
+        response = requests.get(
+            f"https://api.github.com/repos/{config['repo']}/contents/{config['path']}",
+            headers=github_headers(config["token"]),
+            params={"ref": config["branch"]},
+            timeout=10,
+        )
+    except requests.RequestException:
+        show_storage_warning()
+        return []
+
     if response.status_code == 404:
         return []
-    response.raise_for_status()
+    try:
+        response.raise_for_status()
+    except requests.RequestException:
+        show_storage_warning()
+        return []
 
     payload = response.json()
     content = base64.b64decode(payload["content"]).decode("utf-8")

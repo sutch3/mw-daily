@@ -1,7 +1,6 @@
 from __future__ import annotations
 
-from collections import Counter, defaultdict
-from statistics import mean
+from collections import Counter
 from typing import Any
 
 
@@ -19,21 +18,3 @@ def category_counts(
         if question:
             counts[question["category"]] += 1
     return counts
-
-
-def weak_areas(
-    attempts: list[dict[str, Any]], questions: list[dict[str, Any]]
-) -> list[tuple[str, float, int]]:
-    lookup = question_lookup(questions)
-    scores_by_category: dict[str, list[int]] = defaultdict(list)
-    for attempt in attempts:
-        score = attempt.get("self_score")
-        question = lookup.get(attempt["question_id"])
-        if question and score:
-            scores_by_category[question["category"]].append(int(score))
-
-    rows = [
-        (category, mean(scores), len(scores))
-        for category, scores in scores_by_category.items()
-    ]
-    return sorted(rows, key=lambda row: (row[1], -row[2]))

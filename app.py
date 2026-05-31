@@ -197,7 +197,6 @@ with left:
 st.divider()
 
 answer_key = f"answer_{active_question['id']}_{mode}"
-score_key = f"score_{active_question['id']}_{mode}"
 reveal_key = f"revealed_{active_question['id']}_{mode}"
 timer_key = f"timer_{active_question['id']}_{mode}"
 
@@ -229,15 +228,6 @@ answer = st.text_area(
     placeholder="Write a structured MW-style answer: define the issue, compare causes or options, weigh trade-offs, then reach a judgement.",
 )
 
-score = st.slider(
-    "Self-score",
-    min_value=1,
-    max_value=5,
-    value=3,
-    key=score_key,
-    help="1 = weak answer, 5 = exam-ready answer.",
-)
-
 save_col, reveal_col = st.columns([0.28, 0.72], vertical_alignment="center")
 with save_col:
     if st.button("Save answer", type="primary", use_container_width=True):
@@ -248,7 +238,6 @@ with save_col:
                     "study_date": date.today().isoformat(),
                     "mode": mode,
                     "answer": answer.strip(),
-                    "self_score": score,
                     "time_seconds": elapsed_seconds,
                 }
             )

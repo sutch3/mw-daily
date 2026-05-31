@@ -266,7 +266,7 @@ with save_col:
             st.warning("Write an answer or add question feedback before saving.")
 
 with reveal_col:
-    if st.button("Reveal model answer", use_container_width=True):
+    if st.button("Show model answer", use_container_width=True):
         st.session_state[reveal_key] = True
 
 if st.session_state.get(reveal_key, False):

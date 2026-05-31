@@ -190,6 +190,24 @@ with right:
         active_question = question_for_day(questions)
 
     st.caption(f"Study date: {date.today().isoformat()}")
+    st.divider()
+    st.subheader("Question feedback")
+    quality_key = f"quality_{active_question['id']}_{mode}"
+    feedback_key = f"feedback_{active_question['id']}_{mode}"
+    quality = st.slider(
+        "Question usefulness",
+        min_value=1,
+        max_value=5,
+        value=4,
+        key=quality_key,
+        help="1 = not useful, 5 = excellent practice question.",
+    )
+    question_feedback = st.text_area(
+        "Notes on this question",
+        key=feedback_key,
+        height=130,
+        placeholder="Optional: too easy, too broad, great topic, needs more tasting logic, not exam-like enough...",
+    )
 
 with left:
     render_question_card(active_question, mode)
@@ -199,8 +217,6 @@ st.divider()
 answer_key = f"answer_{active_question['id']}_{mode}"
 reveal_key = f"revealed_{active_question['id']}_{mode}"
 timer_key = f"timer_{active_question['id']}_{mode}"
-quality_key = f"quality_{active_question['id']}_{mode}"
-feedback_key = f"feedback_{active_question['id']}_{mode}"
 
 st.subheader("Timed answer")
 timer_running, elapsed_seconds = timer_state(timer_key)
@@ -222,22 +238,6 @@ with timer_columns[2]:
         st.rerun()
 with timer_columns[3]:
     st.metric("Time taken", format_duration(elapsed_seconds))
-
-st.subheader("Question feedback")
-quality = st.slider(
-    "Question usefulness",
-    min_value=1,
-    max_value=5,
-    value=4,
-    key=quality_key,
-    help="1 = not useful, 5 = excellent practice question.",
-)
-question_feedback = st.text_area(
-    "Notes on this question",
-    key=feedback_key,
-    height=110,
-    placeholder="Optional: too easy, too broad, great topic, needs more tasting logic, not exam-like enough...",
-)
 
 answer = st.text_area(
     "Sara's answer",

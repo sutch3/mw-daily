@@ -199,6 +199,8 @@ st.divider()
 answer_key = f"answer_{active_question['id']}_{mode}"
 reveal_key = f"revealed_{active_question['id']}_{mode}"
 timer_key = f"timer_{active_question['id']}_{mode}"
+quality_key = f"quality_{active_question['id']}_{mode}"
+feedback_key = f"feedback_{active_question['id']}_{mode}"
 
 st.subheader("Timed answer")
 timer_running, elapsed_seconds = timer_state(timer_key)
@@ -228,6 +230,22 @@ answer = st.text_area(
     placeholder="Write a structured MW-style answer: define the issue, compare causes or options, weigh trade-offs, then reach a judgement.",
 )
 
+st.subheader("Question feedback")
+quality = st.slider(
+    "Question usefulness",
+    min_value=1,
+    max_value=5,
+    value=4,
+    key=quality_key,
+    help="1 = not useful, 5 = excellent practice question.",
+)
+question_feedback = st.text_area(
+    "Notes on this question",
+    key=feedback_key,
+    height=110,
+    placeholder="Optional: too easy, too broad, great topic, needs more tasting logic, not exam-like enough...",
+)
+
 save_col, reveal_col = st.columns([0.28, 0.72], vertical_alignment="center")
 with save_col:
     if st.button("Save answer", type="primary", use_container_width=True):
@@ -239,6 +257,8 @@ with save_col:
                     "mode": mode,
                     "answer": answer.strip(),
                     "time_seconds": elapsed_seconds,
+                    "question_quality": quality,
+                    "question_feedback": question_feedback.strip(),
                 }
             )
             st.success("Saved.")

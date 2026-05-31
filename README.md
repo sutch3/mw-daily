@@ -10,6 +10,7 @@ MW Daily is a small Streamlit app for Master of Wine exam preparation. It gives 
 - Categories covering viticulture, vinification, wine business, global wine regions, current issues, tasting logic, and research paper skills
 - Warm-up, MW-style, and exam-pressure difficulty levels
 - Saved written answers
+- Question usefulness rating and optional feedback notes
 - Model answer, marking points, common traps, and follow-up reading topics
 - Progress page with answered questions, category coverage, time taken, and answer history
 

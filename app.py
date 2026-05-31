@@ -124,7 +124,9 @@ with st.container(border=True):
         st.caption(f"Study date: {date.today().isoformat()}")
 
     with history_col:
-        st.page_link("pages/1_History.py", label="History")
+        if st.button("History", width="content"):
+            st.session_state["show_history_page"] = True
+            st.switch_page("pages/1_History.py")
 
     if mode == "Random question":
         active_question = next(

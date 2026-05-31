@@ -12,6 +12,9 @@ from mw_daily.ui import apply_global_styles
 st.set_page_config(page_title="MW Daily History", page_icon="MW", layout="wide")
 apply_global_styles()
 
+if not st.session_state.get("show_history_page"):
+    st.switch_page("app.py")
+
 st.markdown(
     """
     <section class="hero-panel">
@@ -39,7 +42,9 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.page_link("app.py", label="Back to today's question")
+if st.button("Back to today's question", type="primary", width="content"):
+    st.session_state["show_history_page"] = False
+    st.switch_page("app.py")
 
 questions = load_questions()
 attempts = load_attempts()

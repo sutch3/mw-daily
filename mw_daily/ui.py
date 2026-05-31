@@ -2,13 +2,13 @@ from __future__ import annotations
 
 
 CATEGORY_ACCENTS = {
-    "Viticulture": "#4F7D5A",
-    "Vinification": "#7A1F35",
-    "Wine business": "#B7892C",
-    "Global wine regions": "#2F6F73",
-    "Current issues": "#A34E35",
-    "Tasting logic": "#4D5E8F",
-    "Research paper skills": "#6F6265",
+    "Viticulture": "#2F7D4C",
+    "Vinification": "#6D3153",
+    "Wine business": "#9A7A2F",
+    "Global wine regions": "#28706C",
+    "Current issues": "#A35A3B",
+    "Tasting logic": "#486B8F",
+    "Research paper skills": "#647260",
 }
 
 
@@ -23,28 +23,31 @@ def apply_global_styles() -> None:
         """
         <style>
         :root {
-            --burgundy: #7A1F35;
-            --burgundy-dark: #521525;
-            --ink: #211B1D;
-            --muted: #6F6265;
-            --paper: #FFFDFC;
-            --blush: #F8F3F1;
-            --gold: #B7892C;
-            --sage: #4F7D5A;
-            --teal: #2F6F73;
-            --line: #E8DCD7;
-            --shadow: 0 18px 50px rgba(35, 31, 32, 0.08);
+            --forest: #1F5A3D;
+            --forest-dark: #153F2B;
+            --vine: #2F7D4C;
+            --leaf: #6FAF6F;
+            --grape: #6D3153;
+            --ink: #1F251F;
+            --muted: #637064;
+            --paper: #FCFCF7;
+            --mist: #F2F6EE;
+            --cream: #FAF7EF;
+            --gold: #B59A55;
+            --line: #DDE6D8;
+            --shadow: 0 18px 45px rgba(31, 90, 61, 0.10);
         }
 
         .stApp {
             background:
-                linear-gradient(180deg, rgba(248, 243, 241, 0.78) 0%, rgba(255, 253, 252, 1) 34%),
+                radial-gradient(circle at top left, rgba(111, 175, 111, 0.16), transparent 28rem),
+                linear-gradient(180deg, rgba(242, 246, 238, 0.92) 0%, rgba(252, 252, 247, 1) 34%),
                 var(--paper);
             color: var(--ink);
         }
 
         [data-testid="stSidebar"] {
-            background: var(--blush);
+            background: var(--mist);
         }
 
         .block-container {
@@ -62,10 +65,15 @@ def apply_global_styles() -> None:
         }
 
         .hero-panel {
-            border-bottom: 1px solid var(--line);
-            background: transparent;
-            padding: 0.4rem 0 1.05rem;
-            margin-bottom: 1.15rem;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background:
+                linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(242, 246, 238, 0.78));
+            box-shadow: 0 16px 40px rgba(31, 90, 61, 0.08);
+            overflow: hidden;
+            padding: 1.15rem 1.2rem 0.85rem;
+            margin-bottom: 1rem;
+            position: relative;
         }
 
         .hero-row {
@@ -76,7 +84,7 @@ def apply_global_styles() -> None:
 
         .brand-mark {
             align-items: center;
-            background: var(--burgundy);
+            background: var(--forest);
             border-bottom: 4px solid var(--gold);
             border-radius: 8px;
             color: #FFFFFF;
@@ -91,7 +99,7 @@ def apply_global_styles() -> None:
         }
 
         .eyebrow {
-            color: var(--burgundy);
+            color: var(--forest);
             font-size: 0.78rem;
             font-weight: 700;
             letter-spacing: 0;
@@ -115,34 +123,44 @@ def apply_global_styles() -> None:
             margin: 0.5rem 0 0;
         }
 
-        .study-card {
-            --category-accent: var(--burgundy);
+        .vine-line {
+            margin-top: 0.85rem;
+            max-width: 720px;
+            opacity: 0.9;
+        }
+
+        .vine-line svg {
+            display: block;
+            height: 38px;
+            width: 100%;
+        }
+
+        .study-surface {
+            background:
+                linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(242, 246, 238, 0.72));
             border: 1px solid var(--line);
-            border-left: 8px solid var(--category-accent);
             border-radius: 8px;
-            padding: 1.45rem;
-            background: #FFFFFF;
-            box-shadow: 0 10px 34px rgba(35, 31, 32, 0.06);
+            box-shadow: var(--shadow);
+            padding: 1rem;
+        }
+
+        .study-card {
+            --category-accent: var(--vine);
+            border-left: 6px solid var(--category-accent);
+            padding: 0.35rem 0 0.4rem 1.15rem;
+            background: transparent;
             position: relative;
         }
 
         .study-card::after {
-            background:
-                linear-gradient(90deg, var(--category-accent), transparent);
-            bottom: 0;
-            content: "";
-            height: 4px;
-            left: 0;
-            opacity: 0.75;
-            position: absolute;
-            right: 0;
+            display: none;
         }
 
         .question-prompt {
             font-family: Georgia, serif;
-            font-size: clamp(1.35rem, 2.3vw, 1.78rem);
+            font-size: clamp(1.45rem, 2.5vw, 1.95rem);
             line-height: 1.38;
-            margin: 0.8rem 0 0.35rem;
+            margin: 0.55rem 0 0.35rem;
         }
 
         .meta-row {
@@ -161,7 +179,7 @@ def apply_global_styles() -> None:
             font-size: 0.85rem;
             gap: 0.4rem;
             padding: 0.28rem 0.72rem;
-            background: var(--blush);
+            background: rgba(255, 255, 255, 0.75);
         }
 
         .pill-accent {
@@ -184,6 +202,10 @@ def apply_global_styles() -> None:
             margin: 1.2rem 0;
         }
 
+        .section-rule.tight {
+            margin: 0.95rem 0;
+        }
+
         .workspace-label {
             color: var(--muted);
             font-size: 0.88rem;
@@ -191,19 +213,27 @@ def apply_global_styles() -> None:
             margin-bottom: 0.8rem;
         }
 
+        .desk-label {
+            color: var(--forest);
+            font-size: 0.78rem;
+            font-weight: 700;
+            margin-bottom: 0.45rem;
+            text-transform: uppercase;
+        }
+
         div.stButton > button {
             border-radius: 6px;
-            border: 1px solid var(--burgundy);
+            border: 1px solid var(--forest);
             font-weight: 650;
         }
 
         div.stButton > button[kind="primary"] {
-            background: var(--burgundy);
+            background: var(--forest);
         }
 
         div.stButton > button:hover {
-            border-color: var(--burgundy-dark);
-            color: var(--burgundy-dark);
+            border-color: var(--forest-dark);
+            color: var(--forest-dark);
         }
 
         [data-testid="stMetric"] {
@@ -215,6 +245,10 @@ def apply_global_styles() -> None:
 
         textarea, input {
             border-radius: 6px !important;
+        }
+
+        .stSlider [data-baseweb="slider"] > div {
+            color: var(--forest);
         }
         </style>
         """,

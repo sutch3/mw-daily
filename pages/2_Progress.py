@@ -16,12 +16,23 @@ st.markdown(
     """
     <section class="hero-panel">
         <div class="hero-row">
-            <div class="brand-mark">MW</div>
+            <div class="brand-mark">S</div>
             <div>
-                <div class="eyebrow">Study record</div>
+                <div class="eyebrow">Sara's study record</div>
                 <h1 class="hero-title">Progress</h1>
-                <p class="lede">Coverage, volume, time taken, and Sara's previous answers.</p>
+                <p class="lede">Coverage, time taken, question feedback, and the answer history she is building.</p>
             </div>
+        </div>
+        <div class="vine-line" aria-hidden="true">
+            <svg viewBox="0 0 720 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 31C92 7 128 44 207 21C286 -2 339 42 413 24C502 2 573 8 710 27" stroke="#2F7D4C" stroke-width="3" stroke-linecap="round"/>
+                <path d="M112 20C96 6 76 7 66 20C85 31 101 30 112 20Z" fill="#6FAF6F"/>
+                <path d="M314 26C296 11 276 14 266 28C285 38 302 37 314 26Z" fill="#6FAF6F"/>
+                <path d="M545 16C529 4 511 6 501 18C518 28 535 27 545 16Z" fill="#6FAF6F"/>
+                <circle cx="634" cy="25" r="5" fill="#6D3153"/>
+                <circle cx="646" cy="27" r="5" fill="#6D3153"/>
+                <circle cx="640" cy="37" r="5" fill="#6D3153"/>
+            </svg>
         </div>
     </section>
     """,

@@ -72,46 +72,65 @@ st.markdown(
     """
     <section class="hero-panel">
         <div class="hero-row">
-            <div class="brand-mark">MW</div>
+            <div class="brand-mark">S</div>
             <div>
-                <div class="eyebrow">Master of Wine preparation</div>
-                <h1 class="hero-title">MW Daily</h1>
-                <p class="lede">One analytical question, one focused answer, one clear piece of feedback. Built for steady MW exam preparation without ceremony.</p>
+                <div class="eyebrow">For Sara's Master of Wine preparation</div>
+                <h1 class="hero-title">Sara's MW Daily</h1>
+                <p class="lede">A quiet daily study ritual: one serious question, space to think, and guidance when she wants it.</p>
             </div>
+        </div>
+        <div class="vine-line" aria-hidden="true">
+            <svg viewBox="0 0 720 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 31C92 7 128 44 207 21C286 -2 339 42 413 24C502 2 573 8 710 27" stroke="#2F7D4C" stroke-width="3" stroke-linecap="round"/>
+                <path d="M112 20C96 6 76 7 66 20C85 31 101 30 112 20Z" fill="#6FAF6F"/>
+                <path d="M314 26C296 11 276 14 266 28C285 38 302 37 314 26Z" fill="#6FAF6F"/>
+                <path d="M545 16C529 4 511 6 501 18C518 28 535 27 545 16Z" fill="#6FAF6F"/>
+                <circle cx="634" cy="25" r="5" fill="#6D3153"/>
+                <circle cx="646" cy="27" r="5" fill="#6D3153"/>
+                <circle cx="640" cy="37" r="5" fill="#6D3153"/>
+            </svg>
         </div>
     </section>
     """,
     unsafe_allow_html=True,
 )
 
-left, right = st.columns([0.62, 0.38], vertical_alignment="top")
+with st.container(border=True):
+    st.markdown('<div class="desk-label">Sara\'s question desk</div>', unsafe_allow_html=True)
+    setup_left, setup_right = st.columns([0.56, 0.44], vertical_alignment="bottom")
 
-with right:
-    with st.container(border=True):
-        st.subheader("Question controls")
-        st.markdown(
-            '<p class="workspace-label">Choose the prompt, then rate whether it is worth Sara\'s time.</p>',
-            unsafe_allow_html=True,
-        )
+    with setup_left:
         mode = st.radio(
             "Mode",
             ["Daily question", "Random question"],
+            horizontal=True,
         )
 
+    with setup_right:
         if mode == "Random question":
             if "random_question_id" not in st.session_state:
                 st.session_state.random_question_id = random.choice(questions)["id"]
             if st.button("New random question", use_container_width=True):
                 st.session_state.random_question_id = random.choice(questions)["id"]
-            active_question = next(
-                question for question in questions if question["id"] == st.session_state.random_question_id
-            )
-        else:
-            active_question = question_for_day(questions)
-
         st.caption(f"Study date: {date.today().isoformat()}")
-        quality_key = f"quality_{active_question['id']}_{mode}"
-        feedback_key = f"feedback_{active_question['id']}_{mode}"
+
+    if mode == "Random question":
+        active_question = next(
+            question for question in questions if question["id"] == st.session_state.random_question_id
+        )
+    else:
+        active_question = question_for_day(questions)
+
+    st.markdown('<div class="section-rule tight"></div>', unsafe_allow_html=True)
+    render_question_card(active_question, mode)
+
+    st.markdown('<div class="section-rule tight"></div>', unsafe_allow_html=True)
+    feedback_left, feedback_right = st.columns([0.38, 0.62], vertical_alignment="top")
+    quality_key = f"quality_{active_question['id']}_{mode}"
+    feedback_key = f"feedback_{active_question['id']}_{mode}"
+
+    with feedback_left:
+        st.markdown("**Is this worth Sara's time?**")
         quality = st.slider(
             "Question usefulness",
             min_value=1,
@@ -119,16 +138,16 @@ with right:
             value=4,
             key=quality_key,
             help="1 = not useful, 5 = excellent practice question.",
+            label_visibility="collapsed",
         )
+
+    with feedback_right:
         question_feedback = st.text_area(
             "Question notes",
             key=feedback_key,
-            height=118,
+            height=92,
             placeholder="Too easy, too broad, great topic, needs more tasting logic...",
         )
-
-with left:
-    render_question_card(active_question, mode)
 
 answer_key = f"answer_{active_question['id']}_{mode}"
 reveal_key = f"revealed_{active_question['id']}_{mode}"

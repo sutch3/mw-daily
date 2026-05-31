@@ -221,23 +221,29 @@ def apply_global_styles() -> None:
             text-transform: uppercase;
         }
 
-        [data-testid="stSegmentedControl"] {
+        [data-testid="stPills"] {
             margin-top: 0.15rem;
         }
 
-        [data-testid="stSegmentedControl"] button {
+        [data-testid="stPills"] button {
             border: 1px solid var(--line) !important;
             border-radius: 999px !important;
-            min-height: 2.55rem;
+            min-height: 2.3rem;
             padding-left: 1rem !important;
             padding-right: 1rem !important;
         }
 
-        [data-testid="stSegmentedControl"] button[aria-pressed="true"],
-        [data-testid="stSegmentedControl"] button[aria-selected="true"] {
+        [data-testid="stPills"] button[aria-pressed="true"],
+        [data-testid="stPills"] button[aria-selected="true"] {
             background: var(--forest) !important;
             border-color: var(--forest) !important;
             color: #FFFFFF !important;
+        }
+
+        [data-testid="stPageLink"] a {
+            color: var(--forest);
+            font-weight: 700;
+            text-decoration: none;
         }
 
         div.stButton > button {

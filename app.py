@@ -97,40 +97,33 @@ st.markdown(
 
 with st.container(border=True):
     st.markdown('<div class="desk-label">My question desk</div>', unsafe_allow_html=True)
-    setup_left, setup_right = st.columns([0.58, 0.42], vertical_alignment="bottom")
+    mode_col, random_col, date_col, history_col = st.columns(
+        [0.42, 0.2, 0.2, 0.18],
+        vertical_alignment="bottom",
+    )
 
-    with setup_left:
-        st.markdown("Mode")
-        if "question_mode" not in st.session_state:
-            st.session_state.question_mode = "Daily question"
-        mode_columns = st.columns(2)
-        with mode_columns[0]:
-            if st.button(
-                "Daily question",
-                type="primary" if st.session_state.question_mode == "Daily question" else "secondary",
-                use_container_width=True,
-            ):
-                st.session_state.question_mode = "Daily question"
-                st.rerun()
-        with mode_columns[1]:
-            if st.button(
-                "Random question",
-                type="primary" if st.session_state.question_mode == "Random question" else "secondary",
-                use_container_width=True,
-            ):
-                st.session_state.question_mode = "Random question"
-                st.rerun()
-        mode = st.session_state.question_mode
+    with mode_col:
+        mode = st.pills(
+            "Question mode",
+            ["Daily question", "Random question"],
+            default="Daily question",
+            key="question_mode",
+            width="content",
+        )
+        mode = mode or "Daily question"
 
-    with setup_right:
-        if st.button("View my history", use_container_width=True):
-            st.switch_page("pages/1_History.py")
+    with random_col:
         if mode == "Random question":
             if "random_question_id" not in st.session_state:
                 st.session_state.random_question_id = random.choice(questions)["id"]
-            if st.button("New random question", use_container_width=True):
+            if st.button("New random", width="content"):
                 st.session_state.random_question_id = random.choice(questions)["id"]
+
+    with date_col:
         st.caption(f"Study date: {date.today().isoformat()}")
+
+    with history_col:
+        st.page_link("pages/1_History.py", label="History")
 
     if mode == "Random question":
         active_question = next(
@@ -148,7 +141,7 @@ with st.container(border=True):
     feedback_key = f"feedback_{active_question['id']}_{mode}"
 
     with feedback_left:
-        st.markdown("**Is this worth my time?**")
+        st.markdown("**Rate this question.**")
         quality = st.slider(
             "Question usefulness",
             min_value=1,

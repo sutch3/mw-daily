@@ -6,12 +6,27 @@ from mw_daily.analytics import category_counts, question_lookup
 from mw_daily.questions import load_questions
 from mw_daily.storage import load_attempts
 from mw_daily.time_format import format_duration
+from mw_daily.ui import apply_global_styles
 
 
 st.set_page_config(page_title="MW Daily Progress", page_icon="MW", layout="wide")
+apply_global_styles()
 
-st.title("Progress")
-st.caption("Coverage, volume, time taken, and Sara's previous answers.")
+st.markdown(
+    """
+    <section class="hero-panel">
+        <div class="hero-row">
+            <div class="brand-mark">MW</div>
+            <div>
+                <div class="eyebrow">Study record</div>
+                <h1 class="hero-title">Progress</h1>
+                <p class="lede">Coverage, volume, time taken, and Sara's previous answers.</p>
+            </div>
+        </div>
+    </section>
+    """,
+    unsafe_allow_html=True,
+)
 
 questions = load_questions()
 attempts = load_attempts()

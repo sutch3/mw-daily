@@ -9,6 +9,7 @@ import streamlit as st
 from mw_daily.questions import question_for_day, load_questions
 from mw_daily.storage import save_attempt
 from mw_daily.time_format import format_duration
+from mw_daily.ui import apply_global_styles, category_accent
 
 
 st.set_page_config(
@@ -19,115 +20,21 @@ st.set_page_config(
 )
 
 
-def apply_styles() -> None:
-    st.markdown(
-        """
-        <style>
-        :root {
-            --burgundy: #7A1F35;
-            --ink: #231F20;
-            --muted: #6F6265;
-            --paper: #FFFDFC;
-            --blush: #F8F3F1;
-            --line: #E9DEDB;
-        }
-
-        .stApp {
-            background: var(--paper);
-            color: var(--ink);
-        }
-
-        [data-testid="stSidebar"] {
-            background: var(--blush);
-        }
-
-        .block-container {
-            max-width: 1080px;
-            padding-top: 3rem;
-            padding-bottom: 4rem;
-        }
-
-        h1, h2, h3 {
-            color: var(--ink);
-            letter-spacing: 0;
-        }
-
-        .eyebrow {
-            color: var(--burgundy);
-            font-size: 0.78rem;
-            font-weight: 700;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            margin-bottom: 0.35rem;
-        }
-
-        .lede {
-            color: var(--muted);
-            font-size: 1.05rem;
-            line-height: 1.6;
-            max-width: 760px;
-            margin-bottom: 1.5rem;
-        }
-
-        .study-card {
-            border: 1px solid var(--line);
-            border-radius: 8px;
-            padding: 1.45rem;
-            background: #FFFFFF;
-            box-shadow: 0 18px 45px rgba(35, 31, 32, 0.06);
-        }
-
-        .question-prompt {
-            font-size: 1.45rem;
-            line-height: 1.45;
-            margin: 0.75rem 0 0.25rem;
-        }
-
-        .meta-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.6rem;
-            margin-top: 1rem;
-        }
-
-        .pill {
-            border: 1px solid var(--line);
-            border-radius: 999px;
-            color: var(--muted);
-            font-size: 0.85rem;
-            padding: 0.28rem 0.7rem;
-            background: var(--blush);
-        }
-
-        div.stButton > button {
-            border-radius: 6px;
-            border: 1px solid var(--burgundy);
-        }
-
-        div.stButton > button[kind="primary"] {
-            background: var(--burgundy);
-        }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
-
-
 def render_question_card(question: dict, mode: str) -> None:
-    st.markdown('<div class="study-card">', unsafe_allow_html=True)
-    st.markdown('<div class="eyebrow">Today in MW Daily</div>', unsafe_allow_html=True)
-    st.markdown(f'<div class="question-prompt">{question["prompt"]}</div>', unsafe_allow_html=True)
+    accent = category_accent(question["category"])
     st.markdown(
-        f"""
-        <div class="meta-row">
-            <span class="pill">{question["category"]}</span>
-            <span class="pill">{question["difficulty"]}</span>
-            <span class="pill">{mode}</span>
+        f"""<div class="study-card" style="--category-accent: {accent};">
+            <div class="eyebrow">Today in MW Daily</div>
+            <div class="question-prompt">{question["prompt"]}</div>
+            <div class="meta-row">
+                <span class="pill"><span class="pill-accent"></span>{question["category"]}</span>
+                <span class="pill">{question["difficulty"]}</span>
+                <span class="pill">{mode}</span>
+            </div>
         </div>
         """,
         unsafe_allow_html=True,
     )
-    st.markdown("</div>", unsafe_allow_html=True)
 
 
 def render_feedback(question: dict) -> None:
@@ -157,14 +64,23 @@ def timer_state(timer_key: str) -> tuple[bool, int]:
     return True, saved_seconds + int(time.time() - started_at)
 
 
-apply_styles()
+apply_global_styles()
 
 questions = load_questions()
 
-st.markdown('<div class="eyebrow">Master of Wine preparation</div>', unsafe_allow_html=True)
-st.title("MW Daily")
 st.markdown(
-    '<p class="lede">One analytical question, one focused answer, one clear piece of feedback. Built for steady MW exam preparation without ceremony.</p>',
+    """
+    <section class="hero-panel">
+        <div class="hero-row">
+            <div class="brand-mark">MW</div>
+            <div>
+                <div class="eyebrow">Master of Wine preparation</div>
+                <h1 class="hero-title">MW Daily</h1>
+                <p class="lede">One analytical question, one focused answer, one clear piece of feedback. Built for steady MW exam preparation without ceremony.</p>
+            </div>
+        </div>
+    </section>
+    """,
     unsafe_allow_html=True,
 )
 
@@ -218,26 +134,27 @@ answer_key = f"answer_{active_question['id']}_{mode}"
 reveal_key = f"revealed_{active_question['id']}_{mode}"
 timer_key = f"timer_{active_question['id']}_{mode}"
 
-st.subheader("Timed answer")
-timer_running, elapsed_seconds = timer_state(timer_key)
-timer_columns = st.columns([0.2, 0.2, 0.2, 0.4], vertical_alignment="center")
+with st.container(border=True):
+    st.subheader("Timed answer")
+    timer_running, elapsed_seconds = timer_state(timer_key)
+    timer_columns = st.columns([0.2, 0.2, 0.2, 0.4], vertical_alignment="center")
 
-with timer_columns[0]:
-    if st.button("Start timer", use_container_width=True, disabled=timer_running):
-        st.session_state[f"{timer_key}_started_at"] = time.time()
-        st.rerun()
-with timer_columns[1]:
-    if st.button("Stop timer", use_container_width=True, disabled=not timer_running):
-        st.session_state[f"{timer_key}_elapsed_seconds"] = elapsed_seconds
-        st.session_state[f"{timer_key}_started_at"] = None
-        st.rerun()
-with timer_columns[2]:
-    if st.button("Reset timer", use_container_width=True):
-        st.session_state[f"{timer_key}_elapsed_seconds"] = 0
-        st.session_state[f"{timer_key}_started_at"] = None
-        st.rerun()
-with timer_columns[3]:
-    st.metric("Time taken", format_duration(elapsed_seconds))
+    with timer_columns[0]:
+        if st.button("Start timer", use_container_width=True, disabled=timer_running):
+            st.session_state[f"{timer_key}_started_at"] = time.time()
+            st.rerun()
+    with timer_columns[1]:
+        if st.button("Stop timer", use_container_width=True, disabled=not timer_running):
+            st.session_state[f"{timer_key}_elapsed_seconds"] = elapsed_seconds
+            st.session_state[f"{timer_key}_started_at"] = None
+            st.rerun()
+    with timer_columns[2]:
+        if st.button("Reset timer", use_container_width=True):
+            st.session_state[f"{timer_key}_elapsed_seconds"] = 0
+            st.session_state[f"{timer_key}_started_at"] = None
+            st.rerun()
+    with timer_columns[3]:
+        st.metric("Time taken", format_duration(elapsed_seconds))
 
 answer = st.text_area(
     "Sara's answer",

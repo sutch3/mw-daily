@@ -1,12 +1,14 @@
 from __future__ import annotations
 
 import random
+import time
 from datetime import date
 
 import streamlit as st
 
 from mw_daily.questions import question_for_day, load_questions
 from mw_daily.storage import save_attempt
+from mw_daily.time_format import format_duration
 
 
 st.set_page_config(
@@ -147,6 +149,14 @@ def render_feedback(question: dict) -> None:
             st.markdown(f"- {topic}")
 
 
+def timer_state(timer_key: str) -> tuple[bool, int]:
+    started_at = st.session_state.get(f"{timer_key}_started_at")
+    saved_seconds = int(st.session_state.get(f"{timer_key}_elapsed_seconds", 0))
+    if started_at is None:
+        return False, saved_seconds
+    return True, saved_seconds + int(time.time() - started_at)
+
+
 apply_styles()
 
 questions = load_questions()
@@ -189,6 +199,28 @@ st.divider()
 answer_key = f"answer_{active_question['id']}_{mode}"
 score_key = f"score_{active_question['id']}_{mode}"
 reveal_key = f"revealed_{active_question['id']}_{mode}"
+timer_key = f"timer_{active_question['id']}_{mode}"
+
+st.subheader("Timed answer")
+timer_running, elapsed_seconds = timer_state(timer_key)
+timer_columns = st.columns([0.2, 0.2, 0.2, 0.4], vertical_alignment="center")
+
+with timer_columns[0]:
+    if st.button("Start timer", use_container_width=True, disabled=timer_running):
+        st.session_state[f"{timer_key}_started_at"] = time.time()
+        st.rerun()
+with timer_columns[1]:
+    if st.button("Stop timer", use_container_width=True, disabled=not timer_running):
+        st.session_state[f"{timer_key}_elapsed_seconds"] = elapsed_seconds
+        st.session_state[f"{timer_key}_started_at"] = None
+        st.rerun()
+with timer_columns[2]:
+    if st.button("Reset timer", use_container_width=True):
+        st.session_state[f"{timer_key}_elapsed_seconds"] = 0
+        st.session_state[f"{timer_key}_started_at"] = None
+        st.rerun()
+with timer_columns[3]:
+    st.metric("Time taken", format_duration(elapsed_seconds))
 
 answer = st.text_area(
     "Sara's answer",
@@ -217,6 +249,7 @@ with save_col:
                     "mode": mode,
                     "answer": answer.strip(),
                     "self_score": score,
+                    "time_seconds": elapsed_seconds,
                 }
             )
             st.success("Saved.")

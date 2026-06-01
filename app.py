@@ -138,10 +138,35 @@ with st.container(border=True):
     st.markdown('<div class="section-rule tight"></div>', unsafe_allow_html=True)
     render_question_card(active_question, mode)
 
-    st.markdown('<div class="section-rule tight"></div>', unsafe_allow_html=True)
-    feedback_left, feedback_right = st.columns([0.38, 0.62], vertical_alignment="top")
+    answer_key = f"answer_{active_question['id']}_{mode}"
+    reveal_key = f"revealed_{active_question['id']}_{mode}"
+    timer_key = f"timer_{active_question['id']}_{mode}"
     quality_key = f"quality_{active_question['id']}_{mode}"
     feedback_key = f"feedback_{active_question['id']}_{mode}"
+    feedback_notice_key = f"feedback_notice_{active_question['id']}_{mode}"
+    timer_running, elapsed_seconds = timer_state(timer_key)
+
+    def save_current_attempt(status: str, answer_text: str) -> bool:
+        try:
+            save_attempt(
+                {
+                    "question_id": active_question["id"],
+                    "study_date": date.today().isoformat(),
+                    "mode": mode,
+                    "status": status,
+                    "answer": answer_text.strip(),
+                    "time_seconds": elapsed_seconds,
+                    "question_quality": quality,
+                    "question_feedback": question_feedback.strip(),
+                }
+            )
+        except requests.RequestException:
+            st.error("I couldn't save to GitHub just now. Try again in a minute.")
+            return False
+        return True
+
+    st.markdown('<div class="section-rule tight"></div>', unsafe_allow_html=True)
+    feedback_left, feedback_right = st.columns([0.38, 0.62], vertical_alignment="top")
 
     with feedback_left:
         st.markdown("**Rate this question.**")
@@ -162,30 +187,12 @@ with st.container(border=True):
             height=92,
             placeholder="Too easy, too broad, great topic, needs more tasting logic...",
         )
+        if st.button("Save feedback", use_container_width=True):
+            if save_current_attempt("rated", ""):
+                st.session_state[feedback_notice_key] = "Feedback saved."
 
-answer_key = f"answer_{active_question['id']}_{mode}"
-reveal_key = f"revealed_{active_question['id']}_{mode}"
-timer_key = f"timer_{active_question['id']}_{mode}"
-
-
-def save_current_attempt(status: str, answer_text: str) -> bool:
-    try:
-        save_attempt(
-            {
-                "question_id": active_question["id"],
-                "study_date": date.today().isoformat(),
-                "mode": mode,
-                "status": status,
-                "answer": answer_text.strip(),
-                "time_seconds": elapsed_seconds,
-                "question_quality": quality,
-                "question_feedback": question_feedback.strip(),
-            }
-        )
-    except requests.RequestException:
-        st.error("I couldn't save to GitHub just now. Try again in a minute.")
-        return False
-    return True
+        if st.session_state.get(feedback_notice_key):
+            st.success(st.session_state[feedback_notice_key])
 
 with st.container(border=True):
     st.subheader("Response workspace")
@@ -193,7 +200,6 @@ with st.container(border=True):
         '<p class="workspace-label">Time my attempt, write my answer, or open the model answer as a study aid.</p>',
         unsafe_allow_html=True,
     )
-    timer_running, elapsed_seconds = timer_state(timer_key)
     timer_columns = st.columns([0.2, 0.2, 0.2, 0.4], vertical_alignment="center")
 
     with timer_columns[0]:

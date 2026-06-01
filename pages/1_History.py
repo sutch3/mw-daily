@@ -50,10 +50,13 @@ questions = load_questions()
 attempts = load_attempts()
 lookup = question_lookup(questions)
 answered_attempts = [
-    attempt for attempt in attempts if attempt.get("status", "answered") != "skipped"
+    attempt for attempt in attempts if attempt.get("status", "answered") == "answered"
 ]
 skipped_attempts = [
     attempt for attempt in attempts if attempt.get("status") == "skipped"
+]
+rated_attempts_only = [
+    attempt for attempt in attempts if attempt.get("status") == "rated"
 ]
 
 answered_count = len(answered_attempts)
@@ -72,12 +75,13 @@ average_quality = (
     else None
 )
 
-metric_columns = st.columns(5)
+metric_columns = st.columns(6)
 metric_columns[0].metric("Questions answered", answered_count)
-metric_columns[1].metric("Questions skipped", len(skipped_attempts))
-metric_columns[2].metric("Question bank", len(questions))
-metric_columns[3].metric("Average time", format_duration(average_time))
-metric_columns[4].metric(
+metric_columns[1].metric("Questions rated", len(rated_attempts_only))
+metric_columns[2].metric("Questions skipped", len(skipped_attempts))
+metric_columns[3].metric("Question bank", len(questions))
+metric_columns[4].metric("Average time", format_duration(average_time))
+metric_columns[5].metric(
     "Question usefulness",
     f"{average_quality:.1f}/5" if average_quality is not None else "-",
 )
@@ -100,7 +104,12 @@ if attempts:
         question = lookup.get(attempt["question_id"], {})
         time_taken = format_duration(attempt.get("time_seconds"))
         status = attempt.get("status", "answered")
-        status_label = "Skipped" if status == "skipped" else "Answered"
+        status_labels = {
+            "answered": "Answered",
+            "rated": "Rated",
+            "skipped": "Skipped",
+        }
+        status_label = status_labels.get(status, "Answered")
         title = (
             f"{attempt['study_date']} · {question.get('category', 'Unknown')} · "
             f"{status_label} · {time_taken}"
@@ -117,7 +126,9 @@ if attempts:
                 if attempt.get("question_quality")
                 else "-",
             )
-            if status == "skipped":
+            if status == "rated":
+                st.info("I rated this question without answering it.")
+            elif status == "skipped":
                 st.info("I skipped this question.")
             elif attempt.get("answer"):
                 st.markdown("**My answer**")

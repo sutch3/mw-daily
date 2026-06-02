@@ -65,6 +65,16 @@ def timer_state(timer_key: str) -> tuple[bool, int]:
     return True, saved_seconds + int(time.time() - started_at)
 
 
+def countdown_state(
+    timer_key: str, countdown_seconds: int
+) -> tuple[bool, int, int, bool]:
+    running, elapsed_seconds = timer_state(timer_key)
+    capped_elapsed = min(elapsed_seconds, countdown_seconds)
+    remaining_seconds = max(countdown_seconds - elapsed_seconds, 0)
+    is_finished = running and remaining_seconds == 0
+    return running, capped_elapsed, remaining_seconds, is_finished
+
+
 apply_global_styles()
 
 questions = load_questions()
@@ -141,10 +151,21 @@ with st.container(border=True):
     answer_key = f"answer_{active_question['id']}_{mode}"
     reveal_key = f"revealed_{active_question['id']}_{mode}"
     timer_key = f"timer_{active_question['id']}_{mode}"
+    timing_mode_key = f"{timer_key}_mode"
+    countdown_minutes_key = f"{timer_key}_countdown_minutes"
     quality_key = f"quality_{active_question['id']}_{mode}"
     feedback_key = f"feedback_{active_question['id']}_{mode}"
     feedback_notice_key = f"feedback_notice_{active_question['id']}_{mode}"
-    timer_running, elapsed_seconds = timer_state(timer_key)
+    timing_mode = st.session_state.get(timing_mode_key, "Stopwatch")
+    countdown_minutes = int(st.session_state.get(countdown_minutes_key, 30))
+    if timing_mode == "Countdown":
+        timer_running, elapsed_seconds, remaining_seconds, countdown_finished = countdown_state(
+            timer_key, countdown_minutes * 60
+        )
+    else:
+        timer_running, elapsed_seconds = timer_state(timer_key)
+        remaining_seconds = 0
+        countdown_finished = False
 
     def save_current_attempt(status: str, answer_text: str) -> bool:
         try:
@@ -200,24 +221,65 @@ with st.container(border=True):
         '<p class="workspace-label">Time my attempt, write my answer, or open the model answer as a study aid.</p>',
         unsafe_allow_html=True,
     )
-    timer_columns = st.columns([0.2, 0.2, 0.2, 0.4], vertical_alignment="center")
+    timing_setup_cols = st.columns([0.36, 0.24, 0.4], vertical_alignment="bottom")
+
+    with timing_setup_cols[0]:
+        selected_timing_mode = st.pills(
+            "Timing tool",
+            ["Stopwatch", "Countdown"],
+            default=timing_mode,
+            key=timing_mode_key,
+            width="content",
+        )
+        timing_mode = selected_timing_mode or "Stopwatch"
+
+    with timing_setup_cols[1]:
+        if timing_mode == "Countdown":
+            countdown_minutes = st.number_input(
+                "Minutes",
+                min_value=1,
+                max_value=180,
+                value=countdown_minutes,
+                step=5,
+                key=countdown_minutes_key,
+                disabled=timer_running,
+            )
+
+    if timing_mode == "Countdown":
+        timer_running, elapsed_seconds, remaining_seconds, countdown_finished = countdown_state(
+            timer_key, int(countdown_minutes) * 60
+        )
+    else:
+        timer_running, elapsed_seconds = timer_state(timer_key)
+        remaining_seconds = 0
+        countdown_finished = False
+
+    timer_columns = st.columns([0.18, 0.18, 0.18, 0.23, 0.23], vertical_alignment="center")
 
     with timer_columns[0]:
-        if st.button("Start timer", use_container_width=True, disabled=timer_running):
+        if st.button("Start", use_container_width=True, disabled=timer_running):
             st.session_state[f"{timer_key}_started_at"] = time.time()
             st.rerun()
     with timer_columns[1]:
-        if st.button("Stop timer", use_container_width=True, disabled=not timer_running):
+        if st.button("Stop", use_container_width=True, disabled=not timer_running):
             st.session_state[f"{timer_key}_elapsed_seconds"] = elapsed_seconds
             st.session_state[f"{timer_key}_started_at"] = None
             st.rerun()
     with timer_columns[2]:
-        if st.button("Reset timer", use_container_width=True):
+        if st.button("Reset", use_container_width=True):
             st.session_state[f"{timer_key}_elapsed_seconds"] = 0
             st.session_state[f"{timer_key}_started_at"] = None
             st.rerun()
     with timer_columns[3]:
         st.metric("Time taken", format_duration(elapsed_seconds))
+    with timer_columns[4]:
+        if timing_mode == "Countdown":
+            st.metric("Time remaining", format_duration(remaining_seconds))
+        else:
+            st.metric("Timing mode", "Stopwatch")
+
+    if countdown_finished:
+        st.warning("Time is up.")
 
     answer = st.text_area(
         "My answer",

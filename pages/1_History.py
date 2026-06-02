@@ -21,9 +21,9 @@ st.markdown(
         <div class="hero-row">
             <div class="brand-mark">S</div>
             <div>
-                <div class="eyebrow">My study record</div>
+                <div class="eyebrow">Sara's study trail</div>
                 <h1 class="hero-title">History</h1>
-                <p class="lede">Coverage, time taken, question feedback, and the answer history I am building.</p>
+                <p class="lede">Every answered, rated, and skipped question, with time spent and notes kept in one tidy place.</p>
             </div>
         </div>
         <div class="vine-line" aria-hidden="true">

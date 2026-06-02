@@ -75,9 +75,9 @@ st.markdown(
         <div class="hero-row">
             <div class="brand-mark">S</div>
             <div>
-                <div class="eyebrow">My Master of Wine preparation</div>
-                <h1 class="hero-title">My MW Daily</h1>
-                <p class="lede">A quiet daily study ritual: one serious question, space to think, and guidance when I want it.</p>
+                <div class="eyebrow">Sara's vine-side MW practice</div>
+                <h1 class="hero-title">Sara's MW Daily</h1>
+                <p class="lede">One corker of a question a day, a clear place to think, and a little guidance when the answer needs uncorking.</p>
             </div>
         </div>
         <div class="vine-line" aria-hidden="true">
